@@ -1,0 +1,6746 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{xcolor}
+\usepackage{bbm}
+\definecolor{blue}{RGB}{0, 0, 140}
+\definecolor{green}{RGB}{0, 140, 0}
+\definecolor{red}{RGB}{220, 0, 0}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.75in
+\topmargin 0.75in
+\rightmargin 0.75in
+\bottommargin 0.75in
+\headheight 0.5in
+\headsep 0.5in
+\footskip 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+)
+\numeric on
+77609
+\numeric off
+( מבוא לחלקיקים אלמנטריים | סיכום
+\end_layout
+
+\begin_layout Author
+שם: מתן אריה פוירשטין 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מנהלות
+\end_layout
+
+\begin_layout Standard
+נכון לעכשיו הקורס יהיה מקוון במהלך כל הסמסטר :)
+\end_layout
+
+\begin_layout Standard
+ציון -
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $10\%$
+\end_inset
+
+ שיעורי בית חובה )לא בודקים אותם( ניתן להחמיץ הגשה אחת ולא ניתן לגשת למבחן
+ בלעדיהם.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $90\%$
+\end_inset
+
+ ציון המבחן.
+\end_layout
+
+\begin_layout Standard
+מומלץ לסכם בעצמנו אבל גם המחברת של המרצה יתפרסמו בקורס.
+\end_layout
+
+\begin_layout Standard
+יצירת קשר דרך 
+\begin_inset Formula 
+\[
+yonit.hochberg@mail.huji.ac.il
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חומרי קריאה:
+\end_layout
+
+\begin_layout Standard
+ינתנו תוך כדי הלימוד, העיקרי יתפרסם במודל - טיוטא לספר שבתהליכי כתיבה.
+\end_layout
+
+\begin_layout Standard
+אחד קצת יותר מעמיק ומתקדם 
+\begin_inset Quotes eld
+\end_inset
+
+התנך
+\begin_inset Quotes erd
+\end_inset
+
+ של פיסיקת החלקיקים 
+\begin_inset Formula $Peskin\;\&\;Schroeder-\;introduction\;to\;QFT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+מהלך הקורס באופן כללי
+\series default
+- נתחיל במבוא כללי, לאחר מכן נדבר על תורת שדות קלאסית.
+ לאחר מכן נקווטט אותה ונדבר על תיאורית שדות קוונטים 
+\begin_inset Formula $(QFT)$
+\end_inset
+
+: בה נתיחס לחלקיקים כערורים )אקסיטציות( בשדה.
+ לאחר מכן נדון באוסילטור הרמוני ובתורת ההפרעות.
+ ומשם נלמד לייצר דיאגרמות ולהפעיל אותן על תורת השדות הקוונטית.
+ ולבסוף בניית מודל - איך לבנות לגרנז'יאנים, להתיחס לסימטריות גלובליות ומקומיות.
+\end_layout
+
+\begin_layout Standard
+אחר כך נדבר על 
+\begin_inset Formula $quantum\;electro\;dynamics\;\left(QED\right)$
+\end_inset
+
+ ועל 
+\begin_inset Formula $quantum\;chromo\;dynamics\;\left(QCD\right)$
+\end_inset
+
+ ועל שבירת סימטריה ספונטנית.
+ ומפרספקטיבה של פיסיקה מודרנית נבנה את המודל הסטנדרטי.
+ ובסוף הקורס נדבר על מעבר למודל הסטנדרטי שם למעשה המחקר ופיסיקת החלקיקים
+ מתחילים.
+\end_layout
+
+\begin_layout Standard
+כדי לדון בכל הנושאים הללו נצטרך מספר השלמות כמו קוונטוט שני, כתיב יחסותי,
+ יחידות טבעיות, פרמיונים כמה ד
+\begin_inset Quotes erd
+\end_inset
+
+ח בשדה ועוד.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מבוא
+\end_layout
+
+\begin_layout Standard
+פיסיקת חלקיקים מוכרת גם כפיסיקה של אנרגיות גבוהות בפיסיקה זו אנחנו מתעניינים
+ לברר מה הם החוקים הבסיסיים של הטבע.
+ לשם כך אנחנו מניחים את עיקרון הפעולה המינימאלית.
+ ובהתבסס על הנחה זו אנחנו שואלים מה הוא הלגרנז'יאן או ההמילטוניאן שמתאר
+ את הטבע היטב.
+\end_layout
+
+\begin_layout Standard
+על מנת למצוא אותו אנחנו מתחילים באקיסומות והגדרות, כך שנוכל לקבל לגרנז'יאן
+ וממנו משוואות תנועה 
+\begin_inset Formula $\left(EOM\right)$
+\end_inset
+
+ ולבסוף לבחון את התיאוריה במעבדה.
+\end_layout
+
+\begin_layout Standard
+כיום יש לנו תשובה טובה לשאלה זו והיא התיאוריה של המודל הסטנדטי.
+ מודל זה אלגנטי, מתבסס על סימטריות ואקסיומות ולמעשה נפתר באמצעות חלקיקים
+ או שדות.
+ כך שפיסיקת חלקיקים היא הדרך שלנו להבין את הטבע.
+\end_layout
+
+\begin_layout Standard
+למה אנחנו צריכים יותר מפיסיקה קוונטית לא יחסותית?
+\end_layout
+
+\begin_layout Standard
+מכיוון שפיסיקה זו לא מאפשרת יצירה והשמדה של חלקיקים.
+ בפיסיקה קוונטית לא יחסותית מתחילים בעיות ב
+\begin_inset Quotes eld
+\end_inset
+
+נניח קיים חלקיק בקופסא
+\begin_inset Quotes erd
+\end_inset
+
+, כלומר, לא קיימות בעיות של יצירה או השמדה של חלקיקים.
+\end_layout
+
+\begin_layout Standard
+המעבר לפיסיקה קוונטית יחסותית היא דרמטית.
+ ד
+\begin_inset Quotes erd
+\end_inset
+
+ח 
+\begin_inset Formula $\left(dof\right)$
+\end_inset
+
+ הבסיסיות הן של השדות ולא של החלקיקים וכפי שנראה החלקיקים הם אקסטציות של
+ השדות.
+\end_layout
+
+\begin_layout Standard
+עדיין נשתמש בעיקרון הפעולה המינימאלית אך נשתמש בו עבור שדות ולא עבור חלקיקים.
+\end_layout
+
+\begin_layout Standard
+בקורס זה נתמקד ב 
+\begin_inset Formula $QFT$
+\end_inset
+
+ תורת שדות קוונטים, תורה שמתארת בצורה טובה עד אנרגיות של כ 
+\begin_inset Formula $1Tev$
+\end_inset
+
+ כ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1000
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים מסת הפרוטון.
+ נסביר מה היא תורה זו, כיצד היא מתארת את הטבע והעולם שאנחנו מכירים ואיך
+ היא נבחנה.
+\end_layout
+
+\begin_layout Standard
+כיצד אנחנו ניגשים לחוקי הטבע הבסיסיים?
+\end_layout
+
+\begin_layout Standard
+ישנן שתי דרכים עיקריות: 
+\end_layout
+
+\begin_layout Standard
+הראשונה, בהינתן לגרנז'יאן אילו תחזיות הוא צופה? מהם זמנים הדעיכה? חתכי הפעולה
+ וכו'.
+\end_layout
+
+\begin_layout Standard
+השניה, איך לבנות את הלגרנז'יאן באמצעות סימטריות.
+\end_layout
+
+\begin_layout Section
+תיאוריית שדות קלאסית
+\end_layout
+
+\begin_layout Standard
+נתחיל בראשונה באמצעות פיסיקת שדות קלאסית ולאחר מכן נקוונטט אותה.
+\end_layout
+
+\begin_layout Subsection
+מכניקה קלאסית
+\end_layout
+
+\begin_layout Standard
+במכניקה קלאסית יש לנו קוא' מוכללות שמבטאות את מיקום החלקיק, ופתרון הבעיה
+ יהיה למצוא את 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ באמצעות פתרון של הפעולה המינימאלית.
+ נניח שיש לנו את הפעולה 
+\begin_inset Formula 
+\[
+S=\int dt\;L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והפתרון 
+\begin_inset Formula $L=f\left(x,\dot{x},\ddot{x},..,t\right)$
+\end_inset
+
+ הוא המינימאלי של הפעולה.
+\end_layout
+
+\begin_layout Standard
+בפתרון של פיסיקה יסודית )
+\lang english
+fundamental
+\lang hebrew
+( אנחנו תמיד מניחים שאין תלות ישירה בזמן, או באופן שקול שמדובר במערכת שיש
+ בה שימור אנרגיה.
+\end_layout
+
+\begin_layout Standard
+כמו כן אנחנו תמיד מניחים שאנחנו תלויים רק בנגזרות עד סדר ראשון בזמן )זה
+ לא משהו פנדמנטלי אלא על מנת שנוכל לפתור בעיה מסוימת זו בדרך ספיציפית זו(.
+ כלומר אנחנו מניחים ש 
+\begin_inset Formula $L=L\left(x,\dot{x}\right)$
+\end_inset
+
+ ופתרונה של משוואה זו הוא באמצעות אוילר לגראנז'.
+ כל זה נקרא 
+\lang english
+
+\begin_inset Quotes eld
+\end_inset
+
+solid mechanichs
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang hebrew
+.
+ על מנת לפתור בעיה זו צריך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תנאי התחלה )עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ ועבור 
+\begin_inset Formula $\dot{x}$
+\end_inset
+
+ לכל ד
+\begin_inset Quotes erd
+\end_inset
+
+ח(.
+\end_layout
+
+\begin_layout Standard
+נכליל את כל מה שעשינו עד כה לפיסיקת שדות קלאסית.
+\end_layout
+
+\begin_layout Standard
+מה הוא שדה? גודל התלוי במרחב ובזמן 
+\begin_inset Formula $\phi\left(x,t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+פונ' זו יכולה להיות מספר ואז זה יהיה שדה סקלארי, יכולה להיות וקטור ויתקבל
+ שדה וקטורי או טנזור ויתקבל שדה טנזורי)?( נראה דוגמאות לכזה בהמשך הקורס.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הבהרות
+\end_layout
+
+\begin_layout Standard
+- הדרישה משדה וקטורי היא שתחת סיבוב המרחב - השדה יסתובב כמו וקטור.
+\end_layout
+
+\begin_layout Standard
+- תיאור השדה לא נכון לכל קנה מידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)
+\lang english
+(scale
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+.
+ יש גבולות בהם תיאור השדה הוא כבר לא רלוונטי
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ בתיאור השדה.
+ לדוגמא השדה האלקטרומגנטי יכול לתאר רק עד גבול של קבוע פלאנק אי אפשר לתאר
+ אותו בסקאלות קטנות יותר.
+\end_layout
+
+\begin_layout Standard
+- באופן דומה יש גם גבול עליון )
+\begin_inset Formula $\text{cutoff}$
+\end_inset
+
+( שמגביל את תיאור השדה במרחקים גדולים או אנרגיות נמוכות מאוד.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+סיכום
+\end_layout
+
+\begin_layout Standard
+הרעיון הכללי של תורת שדות הוא שהקואו' המוכללות הן השדה.
+\end_layout
+
+\begin_layout Standard
+לכן על מנת לפתור תורת שדות קלאסית עלינו למצוא את השדה 
+\begin_inset Formula $\phi\left(x,t\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ ו 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ זוהי הכללה כללית של המכניקה, כשבמכניקה אנחנו מחפשים את משוואת התנועה 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+, זו משוואה של ארגומנט אחד, לעומת זאת בשדות אנחנו מחפשים פתרון של מספר ארגומנטים.
+ לאחר מכן בקוונטוט נהפוך כל גודל לאורפטור.
+ כלומר, עבור שדות כלליים ממרחב 
+\begin_inset Formula $d$
+\end_inset
+
+ מימדי אנחנו פותרים משוואה של 
+\begin_inset Formula $d+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+משוואת אוילר לגראנז' עבור שדות
+\end_layout
+
+\begin_layout Standard
+)ניתן למצוא מקורות ב 
+\begin_inset Formula $\text{goldstein ch.13}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נניח תיאוריה עם כמה שדות 
+\begin_inset Formula $\phi_{i}\left(x_{i},t_{i}\right)$
+\end_inset
+
+ )ד
+\begin_inset Quotes erd
+\end_inset
+
+ח שלנו( לשם הפשטות נניח שדה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ממרחב חד מימדי 
+\begin_inset Formula $\phi\left(x,t\right)$
+\end_inset
+
+, לכן יהיו 
+\begin_inset Formula $1+1=2$
+\end_inset
+
+ ד
+\begin_inset Quotes erd
+\end_inset
+
+ח.
+\end_layout
+
+\begin_layout Standard
+האקסיומות שלנו בתורת השדות הן הכללות פשוטות של האקסיומות מהמכניקה.
+ אנחנו נתיחס ל 
+\begin_inset Formula $x$
+\end_inset
+
+ בתור 
+\begin_inset Quotes eld
+\end_inset
+
+זמן נוסף
+\begin_inset Quotes erd
+\end_inset
+
+ כלומר נכתוב את הפעולה שלנו 
+\begin_inset Formula 
+\[
+S=\int L\;dxdt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $L$
+\end_inset
+
+ בכלליות פונ' של השדה, ונגזרותיו לפי הזמן והמקום.
+\end_layout
+
+\begin_layout Standard
+כמו שעשינו כשפתרנו את המקרה של מכניקה, נניח שאין תלות ישירה ב 
+\begin_inset Formula $x$
+\end_inset
+
+ וב 
+\begin_inset Formula $t$
+\end_inset
+
+ )שימור אנרגיה ושימור תנע קווי(.
+\end_layout
+
+\begin_layout Standard
+כמו כן נניח שיש רק נגזרות עד סדר ראשון.
+ כך שלבסוף 
+\begin_inset Formula 
+\[
+S=\int\mathscr{L}\left(\phi,\dot{\phi},\phi'\right)\;dxdt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך שלמעשה הזמן והמקום בתורה זו משחקים תפקיד זהה.
+\end_layout
+
+\begin_layout Standard
+כעת נניח את עיקרון הפעולה המינימאלי, נדרוש שהמערכת תתפתח מ 
+\begin_inset Formula $\phi\left(x_{1},t_{1}\right)$
+\end_inset
+
+ ל 
+\begin_inset Formula $\phi\left(x_{2},t_{2}\right)$
+\end_inset
+
+ בדרך שתעשה את הפעולה מינימאלית.
+\end_layout
+
+\begin_layout Standard
+כל הפרטים המתמטיים של איך בדיוק עושים זאת נמצאים במקור שהוזכר קודם 
+\begin_inset Formula $GPF\;ch.13$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+השורה התחתונה, שמקבלים את ההכללה של משוואת אוילר לגרנז' לשדות עם עד נגזרת
+ מסדר ראשון היא:
+\begin_inset Formula 
+\[
+\frac{\partial}{\partial\phi}\mathscr{L}=\frac{d}{dt}\left(\frac{\partial\mathscr{L}}{\partial\dot{\phi}}\right)+\frac{d}{dx}\left(\frac{\partial\mathscr{L}}{\partial\phi'}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+.
+\begin_inset Formula 
+\[
+\mathscr{L}=\frac{1}{2}\left(\dot{\phi}^{2}-v^{2}\phi'^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{E-L}{\overbrace{\Longrightarrow}}0=\ddot{\phi}-v^{2}\phi''
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זוהי משוואת הגלים החופשית שפתרונה 
+\begin_inset Formula 
+\[
+\phi\left(x,t\right)=e^{i\left(kx-\omega t\right)}\quad\omega=kv
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+.
+\begin_inset Formula 
+\[
+\mathscr{L}=\frac{1}{2}\left(\dot{\phi}^{2}-v^{2}\phi'^{2}-m^{2}\phi^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{E-L}{\overbrace{\Longrightarrow}}v^{2}\phi''-m^{2}\phi=\ddot{\phi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זוהי עדיין משוואת גלים ששמה קליין גורדון אך הפעם עם יחס דיספרסיה שונה:
+\begin_inset Formula 
+\[
+\phi\left(x,t\right)=e^{i\left(kx-\omega t\right)}\quad\omega^{2}=\left(kv\right)^{2}+m^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\numeric off
+.
+ 
+\begin_inset Formula 
+\[
+\mathscr{L}=\frac{1}{2}\left(\dot{\phi}^{2}-v^{2}\phi'^{2}\right)+\frac{\lambda}{3}\phi^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{E-L}{\overbrace{\Longrightarrow}}v^{2}\phi''+\lambda\phi^{2}=\ddot{\phi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא לינארית! נוכל להשתמש בתורת ההפרעות על מנת לפתור בעייה זו(.
+\end_layout
+
+\begin_layout Standard
+לכל אורך הקורס נשתמש בתורת ההפרעות, מחשבים סביב המינימום ומוסיפים את החזקות
+ השונות באמצעות תורת ההפרעות.
+\end_layout
+
+\begin_layout Standard
+עד כה ראינו כמה דוגמאות לתורת שדות קלאסית.
+\end_layout
+
+\begin_layout Standard
+כעת נעביר את 
+\begin_inset Formula $x,t$
+\end_inset
+
+ ל
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מימדים ולשם כך נשתמש בסימונים של תורת היחסות.
+\end_layout
+
+\begin_layout Section
+יחסות וכתיב יחסותי
+\end_layout
+
+\begin_layout Standard
+)לרפרנס ניתן לעיין ב 
+\begin_inset Formula $Griffiths\;ch.3$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection
+אינווריאנט לורנץ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ מיקום של אות אור בזמן 
+\begin_inset Formula $t$
+\end_inset
+
+ במערכת אחת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i}'$
+\end_inset
+
+ מיקום של אותו אות אור בזמן 
+\begin_inset Formula $t'$
+\end_inset
+
+ במערכת שניה.
+\end_layout
+
+\begin_layout Standard
+אזי יש גודל שמור 
+\begin_inset Formula 
+\[
+S^{2}=c^{2}t^{2}-x_{i}^{2}=ct'^{2}-x_{i}'^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אוסף ההעתקות הלינאריות שמשמרות גודל זה נקראות חבורת טרנס' לורנץ.
+\end_layout
+
+\begin_layout Standard
+כעת נגדיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקטור מיקום מאורע במרחב זה 
+\begin_inset Formula 
+\[
+x^{\mu}=\left(\begin{array}{cccc}
+ct & x & y & z\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ו 
+\begin_inset Formula $\mu=0,1,2,3$
+\end_inset
+
+ .
+ לרוב 
+\begin_inset Formula $i,j$
+\end_inset
+
+ משמשים לכתיב המרחבי כלומר 
+\begin_inset Formula $i,j=1,2,3$
+\end_inset
+
+.
+ כמו כן ניתן לשים לב שלכל ארבעת הרכיבים יש את אותם המימדים.
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $x^{\mu}$
+\end_inset
+
+ הוא הקואורדינטות של מאורע במערכת אינרציאלית 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ כעת נניח מערכת ייחוס אחרת 
+\begin_inset Formula $S'$
+\end_inset
+
+ שנעה במהירות קבועה 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ ביחס ל 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הקואורדינטות של אותו המאורע 
+\begin_inset Formula $x^{\mu}$
+\end_inset
+
+ במערכת ייחוס 
+\begin_inset Formula $S'$
+\end_inset
+
+ תהיה
+\begin_inset Formula 
+\[
+x'^{0}=\gamma\left(x^{0}-\beta x^{1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x'^{1}=\gamma\left(x^{1}-\beta x^{0}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x'^{2}=x^{2}\quad x'^{3}=x^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $\beta=\frac{v}{c}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $\gamma=\frac{1}{\sqrt{1-\beta^{2}}}$
+\end_inset
+
+.
+ כמו כן משתמשים במילה 
+\begin_inset Formula $boost$
+\end_inset
+
+ לשם הגדרת הפרש מהירות בין שתי מערכות אינרציאליות.
+\end_layout
+
+\begin_layout Subsection
+ארבע וקטור
+\end_layout
+
+\begin_layout Standard
+הגדרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקטור כללי-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקטור שתחת טרנספורמצייה מ 
+\begin_inset Formula $S$
+\end_inset
+
+ ל 
+\begin_inset Formula $S'$
+\end_inset
+
+ עובר את אותה הטרנס' שרכיבי 
+\begin_inset Formula $x^{\mu}$
+\end_inset
+
+ עוברים.
+ 
+\end_layout
+
+\begin_layout Standard
+דוגמא לארבע וקטור אחר: 
+\begin_inset Formula $P^{\mu}=\left(\begin{array}{cccc}
+\frac{E}{c} & p_{x} & p_{y} & p_{z}\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת נראה דוגמאות לפעולות מתמטיות עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקטור:
+\end_layout
+
+\begin_layout Standard
+הכפלה ע
+\begin_inset Quotes erd
+\end_inset
+
+י מספר: 
+\begin_inset Formula 
+\[
+a^{\mu}=\left(a^{0}\;a^{1}\;a^{2}\;a^{3}\right)\rightarrow ca^{\mu}=\left(ca^{0}\;ca^{1}\;ca^{2}\;ca^{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חיבור:
+\begin_inset Formula 
+\[
+a^{\mu}+b^{\mu}\rightarrow\left(a^{0}+b^{0}\;a^{1}+b^{1}\;a^{2}+b^{2}\;a^{3}+b^{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולבסוף מכפלה פנימית: 
+\begin_inset Formula 
+\[
+a\cdot b=a^{0}b^{0}-a^{1}b^{1}-a^{2}b^{2}-a^{3}b^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר נוטציה חדשה לאותו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקטור.
+ במקום שיהיה עם כתיב עילי נגדיר אותו עם כתיב תחתי:
+\begin_inset Formula 
+\[
+x_{\mu}=\left(\begin{array}{cccc}
+ct & -x & -y & -z\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן כללי ניתן לעשות זאת לכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקטור.
+ כשנגדיר 
+\begin_inset Formula 
+\[
+a_{\mu}=\left(\begin{array}{cccc}
+a^{0} & -a^{1} & -a^{2} & -a^{3}\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נאמץ את קונבנציית הסכימה של איינשטיין.
+ כל אינדקס שמופיע פעמיים הוא ניסכם.
+\end_layout
+
+\begin_layout Standard
+אם נכתוב 
+\begin_inset Formula 
+\begin{align*}
+a^{\mu}b_{\mu} & =a^{0}b_{0}+a^{1}b_{1}+a^{2}b_{2}+a^{3}b_{3}\\
+ & =a^{0}b^{0}-a^{1}b^{1}-a^{2}b^{2}-a^{3}b^{3}\\
+ & =a\cdot b
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וככה סכימה של אינדקס עילי עם תחתי היא למעשה מכפלה פנימית.
+ כלומר, זוהי דרך נוספת לכתוב מכפלה פנימית.
+ 
+\end_layout
+
+\begin_layout Standard
+נשים לב שהיצור 
+\begin_inset Formula 
+\[
+a^{\mu}b^{\mu}=a^{0}b^{0}+a^{1}b^{1}+a^{2}b^{2}+a^{3}b^{3}\neq a\cdot b
+\]
+
+\end_inset
+
+לא אינווריאנטי תחת טרנספורמציית לורנץ לכן לא נראה יצורים כאלה בחישובים שלנו.
+\end_layout
+
+\begin_layout Standard
+הערות שימושיות על סכימה של אינדקסים:
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+.
+ אף פעם לא יהיה יותר מפעמיים את אותו האינדקס בביטוי )לא מוגדר היטב כי דו
+ משמעי( לדוג' 
+\begin_inset Formula $a^{\mu}b_{\mu}c^{\mu}d_{\mu}$
+\end_inset
+
+ לא מוגדר היטב אבל 
+\begin_inset Formula 
+\[
+a^{\mu}b_{\mu}c^{\nu}d_{\nu}=\left(a\cdot b\right)\left(c\cdot d\right)
+\]
+
+\end_inset
+
+ כן מוגדר היטב וכן 
+\begin_inset Formula 
+\[
+a^{\mu}b_{\nu}c^{\nu}d_{\mu}=\left(a\cdot d\right)\left(b\cdot d\right)
+\]
+
+\end_inset
+
+מוגדר היטב 
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+.
+ השם של אינדקס הסכימה חסר משמעות.
+ כלומר 
+\begin_inset Formula 
+\[
+a^{\mu}b_{\mu}=a^{\nu}b_{\nu}=a_{\sigma}b^{\sigma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מטריקה טנזורית
+\end_layout
+
+\begin_layout Standard
+נוטציה חשובה נוספת היא המטריקה הטנזורית זה מטריצה 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ ששווה ל
+\begin_inset Formula 
+\[
+g_{\mu\nu}=\left(\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0\\
+0 & 0 & -1 & 0\\
+0 & 0 & 0 & -1
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המכונה גם 
+\begin_inset Formula $\text{"mostly negative metric"}$
+\end_inset
+
+.
+ ודרך מטריצה זו ניתן לעבור בין כתיב עילי לתחתי ולהפך 
+\begin_inset Formula 
+\[
+a_{\mu}=g_{\mu\nu}a^{\nu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כשמתרגלים לכתיב זה הכל יהיה נח ולא נצטרך לחשוב על ההגדרות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל בחישובים.
+\end_layout
+
+\begin_layout Standard
+כמו כן ניתן להשתמש במטריצה זו על מנת לכתוב את המכפלה הסקלארית:
+\begin_inset Formula 
+\[
+a\cdot b=a^{\mu}b_{\mu}=a_{\mu}b^{\mu}=a^{\mu}g_{\mu\nu}b^{\mu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכך נוכל להגדיר גם את 
+\begin_inset Formula $g^{\mu\nu}$
+\end_inset
+
+ באופן זהה לחלוטין כלומר 
+\begin_inset Formula $g^{\mu\nu}=g_{\mu\nu}$
+\end_inset
+
+ ובאופן זה נוכל 
+\begin_inset Quotes eld
+\end_inset
+
+להעלות את האינדקס
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+a^{\mu}=g^{\mu\nu}a_{\nu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+נגזרות
+\end_layout
+
+\begin_layout Standard
+האנלוג לגרדיאנט תלת מימדי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\partial_{\mu}=\frac{\partial}{\partial x^{\mu}}=\left(\begin{array}{cccc}
+\frac{1}{c}\frac{\partial}{\partial t} & \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובאופן דומה על ידי שימוש במטריקה הטנזורית 
+\begin_inset Formula 
+\[
+\partial^{\mu}=g^{\mu\nu}\partial_{\nu}=\left(\begin{array}{cccc}
+\frac{1}{c}\frac{\partial}{\partial t} & -\frac{\partial}{\partial x} & -\frac{\partial}{\partial y} & -\frac{\partial}{\partial z}\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להשתמש באופרטורים אלה על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקטור של מיקום.
+ לדוגמא על פונק' סקלארית 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ הנגזרת 
+\begin_inset Formula $\partial_{\mu}f$
+\end_inset
+
+ תהיה 
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקטור )לפי כמות האינדקסים החופשיים )שאינם אינדקסי סכימה(, ניתן לדעת באיזה
+ דרגה של טנזור מדובר(.
+\end_layout
+
+\begin_layout Standard
+דוגמא נוספת - כעת נכפיל את 
+\begin_inset Formula $\partial_{\mu}$
+\end_inset
+
+ על ארבע וקטור 
+\begin_inset Formula $h^{\mu}$
+\end_inset
+
+ אזי נקבל 
+\begin_inset Formula 
+\[
+\partial_{\mu}h^{\mu}=\frac{1}{c}\frac{\partial h^{0}}{\partial t}+\frac{\partial h^{1}}{\partial x}+\frac{\partial h^{2}}{\partial y}+\frac{\partial h^{3}}{\partial z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לעיתים נקרא 
+\begin_inset Formula $4-divergence$
+\end_inset
+
+.
+ לשים לב שאין מינוסים בחלק המרחבי לפי ההגדרה של הנגזרת.
+\end_layout
+
+\begin_layout Standard
+כתרגיל ניתן לבדוק ש 
+\begin_inset Formula 
+\[
+\partial_{\mu}h^{\mu}=\partial^{\mu}h_{\mu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה )שלי, אז לקחת בעירבון מוגבל(:
+\begin_inset Formula 
+\[
+\partial^{\mu}h_{\mu}=g^{\mu\nu}\partial_{\nu}h_{\mu}=\partial_{\nu}h^{\nu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלל אצבע: אם כל האינקסים 
+\begin_inset Formula $contracted=sum\;over\;indices$
+\end_inset
+
+ אז זהו סקלאר לורנץ.
+\end_layout
+
+\begin_layout Standard
+אם אינדקס אחד לא נסכם זהו וקטור לורנץ.
+\end_layout
+
+\begin_layout Standard
+וכן הלאה )אם שני אינדקסים הם לא אינדקסי סכימה אז זה טנזור מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכו'..(
+\end_layout
+
+\begin_layout Standard
+דוגמא לסקלאר לורנץ מסת מנוחה של האלקטרון.
+ וגם מטען חשמלי לדוג'.
+\end_layout
+
+\begin_layout Standard
+לבסוף, 
+\begin_inset Formula $grand-squared$
+\end_inset
+
+ אופרטור, או אופרטור הקופסא, המקבילה של לפלסיאן תלת מימדי
+\begin_inset Formula 
+\[
+\partial_{\mu}\partial^{\mu}=\frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}}-\frac{\partial^{2}}{\partial x^{2}}-\frac{\partial^{2}}{\partial y^{2}}-\frac{\partial^{2}}{\partial z^{2}}=\square
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהו האופרטור שמופיע במשוואת הגלים, נקרא גם אופרטור ד'לאמבר ומסומן גם כ 
+\begin_inset Formula $\square$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{\mu}$
+\end_inset
+
+- נקרא גם קונטרא וריאנט וקטור.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{\mu}$
+\end_inset
+
+ - נקרא גם קו וריאנט וקטור.
+\end_layout
+
+\begin_layout Standard
+ומכפלה של שניהם היא אינווריאנט לורנץ.
+\end_layout
+
+\begin_layout Standard
+ניתן לחשוב על חבורת לורנץ החבורה שמשמרת את המטריקה של 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ כל המכפלות של סיבובים ושל 
+\begin_inset Formula $boost$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לדוגמא 
+\begin_inset Formula 
+\[
+p^{\mu}=\left(\frac{E}{c},\vec{p}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p^{\mu}p_{\mu}=m^{2}c^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן שמסת המנוחה היא סקלאר לורנץ.
+ כלומר סקלאר לורנץ מתקבל על ידי סכימה )נכונה( של אינדקסים.
+ לדוגמא: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p^{\mu}p_{\mu},dx^{\mu}dx_{\mu},dx^{\mu}p_{\mu},...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בכתיב זה בשביל משוואות אוילר לגראנז'.
+\end_layout
+
+\begin_layout Subsection
+אוילר לגראנז'
+\end_layout
+
+\begin_layout Standard
+תחילה הלגרנז'יאן שלנו )מהדוגמא השניה(:
+\begin_inset Formula 
+\[
+\mathscr{L}=\frac{1}{2}\left[\underset{\left(\partial_{\mu}\phi\right)\left(\partial^{\mu}\phi\right)}{\underbrace{\left(\partial_{\mu}\phi\right)^{2}}}-m^{2}\phi^{2}\right]
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{E-L}{\overbrace{\Longrightarrow}}\left(\square+m^{2}\right)\phi=0\hfill\left(\text{GPS\; ch. 13 Peskin ch. 2.2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכנס לזה יותר לעובי הקורה בהמשך כשנדון בחלקיקים.
+\end_layout
+
+\begin_layout Standard
+באופן כללי משוואות אוילר לגראנז' בכתיב זה תראה כך:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E-L:\quad\partial_{\mu}\left(\frac{\partial\mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\right)=\frac{\partial\mathscr{L}}{\partial\phi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L\left[\phi\left(x_{\mu}\right),\partial_{\mu}\left(\phi\left(x_{\mu}\right)\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב 
+\begin_inset Formula $Free\;field\;theory$
+\end_inset
+
+ שדה בלי אינטראקציות, )שבהמשך על גביהן נלביש שדה עם אינטראקציות ונפתור עם
+ תורת ההפרעות.( הופכים את האנרגיה הקינטית ל
+\begin_inset Formula 
+\[
+T\propto\left(\frac{dx}{dt}\right)^{2}\rightarrow T\propto\left(\frac{\partial\phi}{\partial t}\right)^{2}-\left(\frac{\partial\phi}{\partial x}\right)^{2}\cdot..
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשדה חופשי יש רק איברים של אנרגיה קינטית, ללא איבר המסה )מהמשוואה שראינו
+ קודם( וללא אינטארקציות.
+\end_layout
+
+\begin_layout Standard
+כלומר בשדה חופשי הלגרנז'יאן יראה כמו 
+\begin_inset Formula 
+\[
+\mathscr{L}=\frac{1}{2}\left(\partial_{\mu}\phi\right)^{2}\Longrightarrow\frac{\partial^{2}\phi}{\partial x^{2}}=\frac{\partial^{2}\phi}{\partial t^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וזו משוואת הגלים החופשית.
+\end_layout
+
+\begin_layout Subsection
+שימור סיבובים ובוסט
+\end_layout
+
+\begin_layout Standard
+חבורת לורנץ משמרת את המטריקה 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ מדוע היא משמרת סשיבובים כי כל סיבוב סביב ציר 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ הוא מהצורה 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+1\\
+ & R
+\end{array}\right)
+\]
+
+\end_inset
+
+כש 
+\begin_inset Formula $R\in SO\left(3\right)$
+\end_inset
+
+.
+ בפרט אינו משפיע על הזמן, ועם דטרמיננטה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+ומוגדרים על ידי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פרמטרים )סיבוב סביב כל ציר(
+\end_layout
+
+\begin_layout Standard
+אבל מדוע גם 
+\begin_inset Formula $boost$
+\end_inset
+
+ נשמר תחת 
+\begin_inset Formula $g$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+ct'\\
+x'\\
+y'\\
+z'
+\end{array}\right)=\left(\begin{array}{cccc}
+\gamma & -\gamma\beta & 0 & 0\\
+-\gamma\beta & \gamma & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{array}\right)\left(\begin{array}{c}
+ct\\
+x\\
+y\\
+z
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון ש 
+\begin_inset Formula 
+\[
+\gamma^{2}-\left(\gamma\beta\right)^{2}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+על ידי הגדרת 
+\begin_inset Formula $\gamma=\cosh\zeta$
+\end_inset
+
+ ו 
+\begin_inset Formula $\gamma\beta=\sinh\zeta$
+\end_inset
+
+ .
+ ניתן לכתוב את הבוסט בכיוון 
+\begin_inset Formula $x$
+\end_inset
+
+ כ 
+\begin_inset Formula 
+\[
+B_{x}\left(\zeta\right)=\left(\begin{array}{cccc}
+\cosh\zeta & \sinh\zeta & 0 & 0\\
+\sinh\zeta & \cosh\zeta & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וישנם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בוסטים ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סיבובים.
+ כך שבסך הכל יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יוצרים לטרנספורמציות לורנץ.
+\end_layout
+
+\begin_layout Subsection
+יחידות טבעיות
+\end_layout
+
+\begin_layout Standard
+בפיסיקת חלקיקים מתייחסים לכך כנתון שה 
+\begin_inset Quotes eld
+\end_inset
+
+יחידות טבעיות
+\begin_inset Quotes erd
+\end_inset
+
+ - מגדירים את היחידות 
+\begin_inset Formula $\hbar=c=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\text{lenght}\right]=\left[\text{time}\right]=\left[\text{energy}\right]^{-1}=\left[\text{mass}\right]^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן לדוג' מסת חלקיק
+\begin_inset Formula 
+\[
+m=\left(mc^{2}\right)=\frac{mc}{\hbar}
+\]
+
+\end_inset
+
+ נקבל שמסת האלקטרון
+\begin_inset Formula 
+\[
+m_{e}\approx9.109\cdot10^{-28}gr=0.511Mev=\left(3.862\cdot10^{-11}cm\right)^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הגדרת חבורת לורנץ
+\end_layout
+
+\begin_layout Standard
+נקבל דרישה על טרנס' באמצעות הידוע לנו עד כה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x'^{\mu}=\Lambda_{\;\nu}^{\mu}x^{\nu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נכתוב את הגודל השמור 
+\begin_inset Formula 
+\begin{align*}
+x^{\mu'}x_{\mu}' & =\Lambda_{\;\nu}^{\mu}x^{\nu}g_{\mu\sigma}x^{\sigma'}=\Lambda_{\;\nu}^{\mu}x^{\nu}g_{\mu\sigma}\Lambda_{\;\rho}^{\sigma}x^{\rho}\\
+ & =\Lambda_{\;\nu}^{\mu}g_{\mu\sigma}\Lambda_{\;\rho}^{\sigma}x^{\nu}x^{\rho}\stackrel{!}{=}x^{\mu}x_{\mu}=g_{\nu\rho}x^{\nu}x^{\rho}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Longrightarrow\;\Lambda_{\;\nu}^{\mu}g_{\mu\sigma}\Lambda_{\;\rho}^{\sigma}=\left(\Lambda_{\nu}^{\;\mu}\right)^{tr}g_{\mu\sigma}\Lambda_{\;\rho}^{\sigma}=g_{\nu\rho}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Longrightarrow\;\Lambda^{tr}g\Lambda=g{\color{lightgray}\ \backslash\;g=g^{-1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Longrightarrow\;g\Lambda^{tr}g=\Lambda^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(g_{\;\nu}^{\mu}=g^{\mu\sigma}g_{\sigma\nu}=\delta_{\nu}^{\mu}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המטריצות שמקיימות את הקשרים הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל מתארים את חבורת לורנץ.
+\end_layout
+
+\begin_layout Standard
+הערה:
+\begin_inset Formula 
+\[
+a^{2}=a\cdot a=\left(a^{0}\right)^{2}-\left(\vec{a}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדרך כלל רגילים שהמכפלה הפנימית של וקטור עם עצמו הוא גודל שגדול מאפס.
+ אבל ביחסות לא.
+\end_layout
+
+\begin_layout Standard
+בסך הכל נמיין את האפשרויות וניתן להם שמות: 
+\begin_inset Formula 
+\[
+a^{2}>0\quad a^{\mu}\;\text{time-like}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a^{2}=0\quad a^{\mu}\;\text{light-like}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a^{2}<0\quad a^{\mu}\;\text{space-like}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טרנספורמציית טנזורים מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ 
+\begin_inset Formula 
+\[
+A'^{\mu\nu}=\Lambda_{\;\sigma}^{\mu}\Lambda_{\;\rho}^{\nu}A^{\sigma\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכן טנזור מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ תחת טרנספורמציית לורנץ ניתן לכתוב:
+\begin_inset Formula 
+\[
+B'^{\mu\nu\lambda}=\Lambda_{\;\sigma}^{\mu}\Lambda_{\;\rho}^{\nu}\Lambda_{\;k}^{\lambda}B^{\sigma\rho k}
+\]
+
+\end_inset
+
+ וכן הלאה..
+\end_layout
+
+\begin_layout Standard
+ניתן להוריד/להעלות אינדקסים גם בטנזורים מכל מני דרגות 
+\begin_inset Formula 
+\[
+A_{\;\nu}^{\mu}=g_{\nu\rho}A^{\mu\rho}\quad A_{\mu\nu}=g_{\mu\rho}g_{\nu\sigma}A^{\rho\sigma}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרגות הטנזורים נקבעות לפי מספר האינדקסים שהם לא של סכימה לדוג':
+\begin_inset Formula 
+\[
+\underset{rank\;2}{\underbrace{a^{\mu}b^{\nu}}}\quad\underset{rank\;4}{\underbrace{a^{\mu}B^{\nu\rho\sigma}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לעומת זאת אינדקסי סכימה לא מעלים את דרגת הטזור לדוג' 
+\begin_inset Formula 
+\[
+\underset{rank\;0}{\underbrace{A_{\mu}^{\mu}}}\quad\underset{rank\;1}{\underbrace{B_{\mu}^{\mu\sigma}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+קוונטיזציה שנייה
+\end_layout
+
+\begin_layout Standard
+השורה התחתונה של פרק זה:
+\end_layout
+
+\begin_layout Standard
+חלקיקים הם אקסיטציות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)עירורים( של שדות.
+ שזה סכומים אינסופיים של אוסילטורים הרמונים.
+\end_layout
+
+\begin_layout Standard
+רפרנס:
+\begin_inset Formula 
+\[
+Peskin\;ch.\quad2.2,2.3,2.4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Greiner-\;field\;quantization\;ch.4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Ryder\;QFT\;ch.4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מושגי הבסיס בשדה הקלאסי
+\end_layout
+
+\begin_layout Standard
+ראינו תורת שדות קלאסית.
+ כעת נגדיר כמו במכניקה שהיה לנו את 
+\begin_inset Formula $q\left(t\right)$
+\end_inset
+
+ והגדרנו את התנע הקאנוני )
+\begin_inset Formula $conjugate\;momentum$
+\end_inset
+
+( להיות 
+\begin_inset Formula $p=\frac{\partial\mathscr{L}}{\partial\dot{q}}$
+\end_inset
+
+.
+ בתורת שדות נגדיר:
+\begin_inset Formula 
+\[
+\underset{canonical\;momentum}{\underbrace{\pi\left(\vec{x},t\right)}}=\frac{\partial\mathscr{L}}{\partial\left(\partial_{0}\phi\right)}=\frac{\partial\mathscr{L}}{\partial\dot{\phi}\left(\vec{x},t\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונבנה באמצעותו את ההמליטוניאן 
+\begin_inset Formula 
+\[
+H=\int d^{3}x\left[\pi\left(\vec{x},t\right)\dot{\phi}-\mathscr{L}\right]=\int d^{3}x\underset{hamiltonian\;density}{\underbrace{\mathscr{H}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור שדה סקלארי ממשי שראינו פעם שעברה: 
+\begin_inset Formula 
+\[
+\mathscr{L}=\frac{1}{2}\dot{\phi}^{2}-\frac{1}{2}\left(\nabla\phi\right)^{2}-\frac{1}{2}m^{2}\phi^{2}=\frac{1}{2}\underset{\left(\partial_{\mu}\phi\right)^{2}}{\underbrace{\partial_{\mu}\phi\partial^{\mu}\phi}}-\frac{1}{2}m^{2}\phi^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראינו שבהנתן לגרנז'יאן זה, משוואת התנועה תהיה 
+\begin_inset Formula 
+\[
+\left(\frac{\partial^{2}}{\partial t^{2}}-\nabla^{2}+m^{2}\right)\phi=\left(\partial_{\mu}\partial^{\mu}+m^{2}\right)\phi=\left(\oblong+m^{2}\right)\phi=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואת קליין גורדון.
+\end_layout
+
+\begin_layout Standard
+במקרה זה 
+\begin_inset Formula 
+\[
+\pi\left(\vec{x},t\right)=\frac{\partial\mathscr{L}}{\partial\dot{\phi}}=\dot{\phi}\left(\vec{x},t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומכאן 
+\begin_inset Formula 
+\[
+H=\int d^{3}x\mathscr{H}=\int d^{3}x\left[\frac{1}{2}\left(\pi\left(\vec{x},t\right)\right)^{2}+\frac{1}{2}\left(\nabla\phi\right)^{2}+\frac{1}{2}m^{2}\phi^{2}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נעבור לתיאורית שדה קוונטי.
+ נקוונטט את תורת השדות הקלאסית, כלומר ניקח את המשתנים הדינאמיים ונהפוך אותם
+ לאופרטורים שמקיימים יחסי חילוף קאנונים.
+ ואז 
+\begin_inset Quotes eld
+\end_inset
+
+נפתור
+\begin_inset Quotes erd
+\end_inset
+
+ את התורה על ידי מציאת הערכים העצמיים והמצבים העצמיים של ההמילטוניאן.
+\end_layout
+
+\begin_layout Standard
+נשתמש באוסילטור ההרמוני כאנלוגיה.
+\end_layout
+
+\begin_layout Subsection
+קווינטוט השדה
+\end_layout
+
+\begin_layout Standard
+נזהה את המשתנים שלנו כאופרטורים 
+\begin_inset Formula 
+\[
+\phi_{i},\pi_{i}\rightarrow\hat{\phi}_{i},\hat{\pi}_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכפה עליהם יחסי חילוף מתאימים.
+\end_layout
+
+\begin_layout Standard
+נזכיר כי עבור מערכת דיסקרטית של חלקיק יחיד או יותר )תחת הנחות של יחידות
+ טבעיות 
+\begin_inset Formula $\hbar=1$
+\end_inset
+
+( 
+\begin_inset Formula 
+\[
+\left[q_{i},p_{i}\right]=i\delta_{ij},\quad\left[q_{i},q_{j}\right]=\left[p_{i},p_{j}\right]=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במערכת רציפה נוכל להכליל בקלות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\phi\left(\vec{x},t\right),\pi\left(\vec{y},t\right)\right]=i\delta^{\left(3\right)}\left(\vec{x}-\vec{y}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\phi\left(\vec{x},t\right),\phi\left(\vec{y},t\right)\right]=\left[\pi\left(\vec{x},t\right),\pi\left(\vec{y},t\right)\right]=0
+\]
+
+\end_inset
+
+אלה יחסי החילוף הקאנונים לשדה 
+\begin_inset Formula $\phi\left(\vec{x},t\right)$
+\end_inset
+
+ והתנע הקאנוני 
+\begin_inset Formula $\pi\left(\vec{x},t\right)$
+\end_inset
+
+ ולעיתים נקראים 
+\begin_inset Formula $\text{Equal time commutation relations}$
+\end_inset
+
+ או בקיצור 
+\begin_inset Formula $ETCR$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+כעת אם השדה הפך לאופרטור גם ההמילטוניאן הופך לאופרטור כי הוא פונק' של אופרטורים
+ אחרים.
+ ננסה למצוא את הספקטרום של ההמילטוניאן 
+\begin_inset Formula $H$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+ניעזר בפתרון משוואת 
+\begin_inset Formula $KG$
+\end_inset
+
+ )קליין גורדון( בפירוק למרחב פורייה.
+\end_layout
+
+\begin_layout Standard
+נרחיב את השדה הקלאסי שפותר את משוואת 
+\begin_inset Formula $KG$
+\end_inset
+
+ באופן הבא:
+\begin_inset Formula 
+\[
+\phi\left(\vec{x},t\right)=\int\frac{d^{3}p}{\left(2\pi\right)^{3}}e^{i\vec{p}\cdot\vec{x}}\phi\left(\vec{p},t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וניעזר בכך ש 
+\begin_inset Formula $\phi\left(\vec{x},t\right)$
+\end_inset
+
+ ממשי ולכן 
+\begin_inset Formula 
+\[
+\phi^{*}\left(\vec{p},t\right)=-\phi\left(-\vec{p},t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וממשוואת קליין גורדן נקבל
+\begin_inset Formula 
+\[
+\left(\partial_{t}^{2}+\vec{p}^{2}+m^{2}\right)\phi\left(\vec{p},t\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במרחב התנע לכל 
+\begin_inset Formula $p$
+\end_inset
+
+ משוואה אחרת, קיבלנו הפרדה של 
+\begin_inset Formula $p$
+\end_inset
+
+ בצורה שנוחה לעבוד איתה.
+ לעומת זאת במרחב המקום המשוואה היתה מצומדת לקוא' שונות.
+\end_layout
+
+\begin_layout Standard
+כלומר במרחב התנע קיבלנו משוואת תנועה של 
+\series bold
+אוסילטור הרמוני
+\series default
+ פשוט.
+ שיש לו תדירות של 
+\begin_inset Formula $\omega_{p}^{2}=\vec{p}^{2}+m^{2}$
+\end_inset
+
+.
+ בשלב זה ראינו ששדה קליין גורדון שקול לסכום אינסופי של אוסילטורים הרמוניים.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הערה:
+\series default
+ נוכל לקבל את משוואת התנועה עבור האופרטורים 
+\begin_inset Formula $\hat{\phi}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\hat{\pi}$
+\end_inset
+
+ באמצעות משוואות הייזנברג של התנועה:
+\begin_inset Formula 
+\[
+i\hbar\frac{\partial}{\partial t}\hat{o}=\left[\hat{o},\hat{H}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונקבל אכן את משוואת קליין גורדון אך כעת בצורה האופרטורית: 
+\begin_inset Formula 
+\[
+\left(\partial_{t}^{2}-\nabla^{2}+m^{2}\right)\hat{\phi}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אנלוגיה לאוסיטלטור הרמוני
+\end_layout
+
+\begin_layout Standard
+נחזור להמילטוניאן של אוסילטור הרמוני:
+\begin_inset Formula 
+\[
+H=\frac{1}{2}p^{2}+\frac{1}{2}\omega^{2}q^{2}
+\]
+
+\end_inset
+
+כדי לקבל ע
+\begin_inset Quotes erd
+\end_inset
+
+ע כותבים את 
+\begin_inset Formula $p$
+\end_inset
+
+ ו 
+\begin_inset Formula $q$
+\end_inset
+
+ כאופרטורי סולם כלומר 
+\begin_inset Formula 
+\[
+q=\frac{1}{\sqrt{2\omega}}\left(a+a^{\dagger}\right)\quad p=-i\sqrt{\frac{\omega}{2}}\left(a-a^{\dagger}\right)
+\]
+
+\end_inset
+
+ויחסי החילוף הקנונים 
+\begin_inset Formula 
+\[
+\left[q,p\right]\sim1\quad\left[a,a^{\dagger}\right]=0
+\]
+
+\end_inset
+
+מקבלים שההמילטוניאן של אוסילטור הרמוני פשוט )
+\begin_inset Formula $Simple\;Harmonic\;Oscillator$
+\end_inset
+
+( הוא:
+\begin_inset Formula 
+\[
+H_{SHO}=\omega\left(a^{\dagger}a+\frac{1}{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר ואקום כ 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ שנהרס על ידי 
+\begin_inset Formula $a$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $a\left|0\right\rangle =0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה מ
+\begin_inset Quotes erd
+\end_inset
+
+ע של ההמילטוניאן עם ע
+\begin_inset Quotes erd
+\end_inset
+
+ע של 
+\begin_inset Formula $\frac{\omega}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+וכן 
+\begin_inset Formula 
+\[
+\left[H_{SHO},a^{\dagger}\right]=\omega a^{\dagger}\quad\left[H_{SHO},a\right]=-\omega a
+\]
+
+\end_inset
+
+וכן מכאן ניתן לראות שכדי לקבל מצבים שונים ניתן להעלות מהואקום 
+\begin_inset Formula 
+\[
+\left(a^{\dagger}\right)^{n}\left|0\right\rangle =\left|n\right\rangle 
+\]
+
+\end_inset
+
+מצבים עצמיים עם ע
+\begin_inset Quotes erd
+\end_inset
+
+ע 
+\begin_inset Formula $\left(n+\frac{1}{2}\right)\omega$
+\end_inset
+
+.
+ וכל המצבים האלו פורשים את הספקטרום.
+\end_layout
+
+\begin_layout Standard
+מכאן ניישם את כל זה עבור סכום אינסופי של אוסילטורים הרמוניים שכמו שראינו
+ קודם שקול לשדה קליין גורדון )שדה סקלארי ממשי(.
+ 
+\end_layout
+
+\begin_layout Standard
+נקבל את משוואות התנועה בתנע כשלכל מוד פורייה יהיה 
+\begin_inset Formula $a$
+\end_inset
+
+ ו 
+\begin_inset Formula $a^{\dagger}$
+\end_inset
+
+ )כי משוואה של אוסילטור הרמוני מופרד לכל 
+\begin_inset Formula $p$
+\end_inset
+
+( ונבדיל בינהם באמצעות שימוש באינדקס 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ הפתרון הכללי של המשוואה הדיפרציאלית הזאת הם סכום יהיה:
+\begin_inset Formula 
+\[
+\phi\left(\vec{p},t\right)=\sqrt{\frac{1}{2\omega_{p}}}\left[a_{p}^{\left(1\right)}e^{-i\omega_{p}t}+a_{p}^{\left(2\right)}e^{i\omega_{p}t}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בגלל ש 
+\begin_inset Formula $\phi$
+\end_inset
+
+ ממשי אזי 
+\begin_inset Formula 
+\[
+\phi\left(p,t\right)=\phi^{*}\left(-p,t\right)\Longrightarrow\left(a_{p}^{\left(1\right)}\right)^{\dagger}=a_{-p}^{\left(2\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב זאת במשוואה כך שלא נצטרך לכתוב יותר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+:
+\begin_inset Formula 
+\[
+\phi\left(\vec{p},t\right)=\sqrt{\frac{1}{2\omega_{p}}}\left[a_{p}e^{-i\omega_{p}t}+a_{-p}^{\dagger}e^{i\omega_{p}t}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Longrightarrow\;\phi\left(\vec{x},t\right)=\int\frac{d^{3}p}{\left(2\pi\right)^{3}}\frac{1}{\sqrt{2\omega_{p}}}\left(a_{p}e^{ip\cdot x-i\omega_{p}t}+a_{p}^{\dagger}e^{-ipx+i\omega_{p}t}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כשהפכנו את 
+\begin_inset Formula $-p$
+\end_inset
+
+ ל 
+\begin_inset Formula $p$
+\end_inset
+
+ מכיוון שבלאו הכי סוכמים את כל ערכי 
+\begin_inset Formula $p$
+\end_inset
+
+ אז אין הבדל )לצורך העניין מתמטית ניתן להגיע לזה על ידי החלפת משתנה(.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\dot{\phi}\left(\vec{x},t\right)=\pi\left(\vec{x},t\right)=-i\int\frac{d^{3}p}{\left(2\pi\right)^{3}}\sqrt{\frac{\omega_{p}}{2}}\left(a_{p}e^{ip\cdot x-i\omega_{p}t}-a_{p}^{\dagger}e^{-ipx+i\omega_{p}t}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נדרוש ש 
+\begin_inset Formula 
+\[
+\left[a_{p},a_{p'}^{\dagger}\right]=\left(2\pi\right)^{3}\delta\left(\vec{p}-\vec{p}'\right)
+\]
+
+\end_inset
+
+ ומכאן יתקבל כמו שרצינו )אנלוגיה לאוסילטור הרמוני(: 
+\begin_inset Formula 
+\[
+\left[\phi\left(\vec{x},t\right),\pi\left(\vec{y},t\right)\right]=i\delta\left(\vec{x}-\vec{y}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבדוק זאת:
+\begin_inset Formula 
+\[
+\left[\phi\left(\vec{x},t\right),\pi\left(\vec{y},t\right)\right]=\frac{-i}{2}\int\frac{d^{3}p}{\left(2\pi\right)^{3}}\int\frac{d^{3}p'}{\left(2\pi\right)^{3}}\{-\left[a_{p},a_{p'}^{\dagger}\right]e^{i\left(p\cdot x-p'\cdot y\right)-i\left(\omega_{p}-\omega_{p'}\right)t}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
++\left[a_{p}^{\dagger},a_{p'}\right]e^{-i\left(p\cdot x-p'\cdot y\right)+i\left(\omega_{p}-\omega_{p'}\right)t}\}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\overset{commutation\;relations}{\overbrace{=}}\frac{-i}{2}\int\frac{d^{3}p}{\left(2\pi\right)^{3}}d^{3}p'\left\{ -\delta\left(p-p'\right)e^{i\left(p\cdot x-p'\cdot y\right)-i\left(\omega_{p}-\omega_{p'}\right)t}-\delta\left(p-p'\right)e^{-i\left(p\cdot x-p'\cdot y\right)+i\left(\omega_{p}-\omega_{p'}\right)t}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{i}{2}\int\frac{d^{3}p}{\left(2\pi\right)^{3}}\left\{ e^{ip\left(x-y\right)}+e^{-ip\left(x-y\right)}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=i\delta\left(\vec{x}-\vec{y}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כשהשתמשנו בזהות 
+\begin_inset Formula $\int\frac{d^{3}p}{\left(2\pi\right)^{3}}e^{ip\left(x-y\right)}=\delta\left(x-y\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בקצרה מה שעשינו עד כה, השתמשנו בתורת שדות קלאסית, התעסקנו בשדה סקלארי ממשי,
+ נקרא גם שדה קליין גורדון.
+ כשהעברנו אותו בטרנספורם פורייה ראינו שניתן להתייחס לכל תנע במרחב זה כאל
+ אוסיטלטור הרמוני חופשי.
+ 
+\end_layout
+
+\begin_layout Standard
+כשהשדה היה:
+\begin_inset Formula 
+\[
+\phi\left(\vec{x},t\right)=\int\frac{d^{3}p}{\left(2\pi\right)^{3}}\sqrt{\frac{1}{2\omega_{p}}}\left[a_{p}e^{i\vec{p}\cdot\vec{x}-i\omega_{p}t}+a_{p}^{\dagger}e^{-i\vec{p}\cdot\vec{x}+i\omega_{p}t}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכן 
+\begin_inset Formula 
+\[
+\pi\left(\vec{x},t\right)=i\int\frac{d^{3}p}{\left(2\pi\right)^{3}}\sqrt{\frac{\omega_{p}}{2}}\left[a_{p}e^{i\vec{p}\cdot\vec{x}-i\omega_{p}t}-a_{p}^{\dagger}e^{-i\vec{p}\cdot\vec{x}+i\omega_{p}t}\right]
+\]
+
+\end_inset
+
+דרשנו ש 
+\begin_inset Formula 
+\[
+\left[a_{p},a_{p'}^{\dagger}\right]=\left(2\pi\right)^{3}\delta\left(\vec{p}-\vec{p'}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וקיבלנו את מה שרצינו )
+\begin_inset Formula $\text{equal time cummutation relation}$
+\end_inset
+
+
+\begin_inset Formula $ETQR-$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+\left[\phi\left(\vec{x},t\right),\pi\left(\vec{y},t\right)\right]=i\delta\left(\vec{x}-\vec{y}\right)
+\]
+
+\end_inset
+
+נבטא את ההמילטוניאן במונחים של האופרטורים האלה:
+\begin_inset Formula 
+\[
+H=\int d^{3}x\frac{1}{2}\left[\left(\pi\left(\vec{x},t\right)\right)^{2}+\left(\nabla\phi\left(\vec{x},t\right)\right)^{2}+m^{2}\left(\phi\left(\vec{x},t\right)\right)^{2}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חשוב לשים לב שכשכותבים 
+\begin_inset Formula $\left(\phi\left(\vec{x},t\right)\right)^{2}$
+\end_inset
+
+ תחת טרנספורם פורייה, יהיה פעם אחת 
+\begin_inset Formula $\vec{p}$
+\end_inset
+
+ ובפעם השניה 
+\begin_inset Formula $\vec{p}'$
+\end_inset
+
+, כלומר:
+\begin_inset Formula 
+\begin{align*}
+H & =\frac{1}{2}\int d^{3}x\{\overset{\left(\pi\left(\vec{x},t\right)\right)^{2}}{\overbrace{\int\frac{d^{3}p}{\left(2\pi\right)^{3}}\int\frac{d^{3}p'}{\left(2\pi\right)^{3}}\left\{ -\sqrt{\frac{\omega_{p}}{2}}\sqrt{\frac{\omega_{p'}}{2}}\left(a_{p}e^{ip\cdot x-i\omega_{p}t}+a_{p}^{\dagger}e^{-ip\cdot x+i\omega_{p}t}\right)\left(a_{p}e^{ip'\cdot x-i\omega_{p'}t}+a_{p}^{\dagger}e^{-ip'\cdot x+i\omega_{p'}t}\right)\right\} }}\\
+ & +\overset{\left(\nabla\phi\left(\vec{x},t\right)\right)^{2}}{\overbrace{\sqrt{\frac{1}{2\omega_{p}}}\sqrt{\frac{1}{2\omega_{p'}}}\left(ipa_{p}e^{ip\cdot x-i\omega_{p}t}-ipa_{p}^{\dagger}e^{-ip\cdot x+i\omega_{p}t}\right)\left(ip'a_{p'}e^{ip'\cdot x-i\omega_{p'}t}-ip'a_{p'}^{\dagger}e^{-ip'\cdot x+i\omega_{p'}t}\right)}}\\
+ & +m^{2}\overset{\left(\phi\left(\vec{x},t\right)\right)^{2}}{\overbrace{\sqrt{\frac{1}{2\omega_{p}}}\sqrt{\frac{1}{2\omega_{p'}}}\left(a_{p}e^{ip\cdot x-i\omega_{p}t}+a_{p}^{\dagger}e^{-ip\cdot x+i\omega_{p}t}\right)\left(a_{p'}e^{ip'\cdot x-i\omega_{p'}t}+a_{p'}^{\dagger}e^{-ip'\cdot x+i\omega_{p'}t}\right)}\}}
+\end{align*}
+
+\end_inset
+
+נשתמש בזהות 
+\begin_inset Formula $\int d^{3}x\;e^{ip\cdot x}=\left(2\pi\right)^{3}\delta\left(\vec{p}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכן נציב 
+\begin_inset Formula $\omega_{p}^{2}=p^{2}+m^{2}$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula 
+\[
+H=\int\frac{d^{3}p}{\left(2\pi\right)^{3}}\omega_{p}\left(a_{p}^{\dagger}a_{p}+\underset{\propto\delta\left(0\right)\;\text{called}\text{infinite\;c-number}}{\underbrace{\frac{1}{2}\left[a_{p},a_{p}^{\dagger}\right]}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כשה 
+\begin_inset Formula $\text{\text{infinite\;c-number}}$
+\end_inset
+
+ הוא 
+\begin_inset Quotes eld
+\end_inset
+
+אינסוף שלא אכפת לנו ממנו
+\begin_inset Quotes erd
+\end_inset
+
+ כי בכל מדידה של האנרגיה אנחנו מודדים אותה בצורה יחסית, כך שאיבר זה תמיד
+ יתבטל במדידות שלנו.
+\end_layout
+
+\begin_layout Standard
+קיבלנו סכום אינסופי של אוסילטורים הרמוניים כמו שציפינו.
+\end_layout
+
+\begin_layout Standard
+וכן נוכל לוודא שכל שאר התכונות של אוסילטור הרמוני נשמרות גם במקרה זה של
+ שדה סקלארי ממשי:
+\begin_inset Formula 
+\[
+\left[H,a_{p}^{\dagger}\right]=\omega_{p}a_{p}^{\dagger}\qquad\left[H,a_{p}\right]=-\omega_{p}a_{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן נוכל לכתוב את הספקטרום של השדה לפי הספקטרום של האוסילטור ההרמוני.
+\end_layout
+
+\begin_layout Standard
+מצב הואקום הוא 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ ונהרס על ידי 
+\begin_inset Formula $a_{p}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $p$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $a_{p}\left|0\right\rangle =0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכל לקבל את כל שאר המצבים על ידי הפעלת 
+\begin_inset Formula $a_{p}^{\dagger}\cdot a_{q}^{\dagger}\cdot...$
+\end_inset
+
+ על הואקום.
+ 
+\end_layout
+
+\begin_layout Standard
+ואלה מצבים עצמיים של ההמליטוניאן עם אנרגיה 
+\begin_inset Formula $\omega_{p}+\omega_{q}+...$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ערורים אלה הם חלקיקים, כלומר משהו בדיד בעל יחס אנרגיה-תנע מתאים:
+\begin_inset Formula 
+\[
+\underset{energy}{\underbrace{\omega_{p}^{2}}}=\underset{momentum}{\underbrace{\vec{p}^{2}}}+m^{2}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+וכן 
+\begin_inset Formula $a_{p}^{\dagger}$
+\end_inset
+
+ יוצר חלקיק עם תנע 
+\begin_inset Formula $p$
+\end_inset
+
+ .
+ ו 
+\begin_inset Formula $a_{p}$
+\end_inset
+
+ הורס חלקיק עם תנע 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הערורים האלו של האוסילטור ההרמוני נקראים חלקיקים.
+\end_layout
+
+\begin_layout Standard
+והשדה המקוונטט הוא סכום של אופרטורי יצירה והשמדה שהם חלקיקים.
+\end_layout
+
+\begin_layout Subsection
+שדה סקלארי מרוכב
+\end_layout
+
+\begin_layout Standard
+בשדה סקלארי מרוכב הלגרנז'יאן דומה לשדה הממשי הסקלארי.
+ רק שכעת אין את הפקטור 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula 
+\[
+\mathscr{L}=\left(\partial_{\mu}\phi\right)^{\dagger}\left(\partial^{\mu}\phi\right)-m^{2}\phi^{\dagger}\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לרשום זאת כחלק ממשי ועוד חלק מדומה 
+\begin_inset Formula $a+ib$
+\end_inset
+
+, וכך כל חלק הוא ממשי )
+\begin_inset Formula $a$
+\end_inset
+
+ ו 
+\begin_inset Formula $b$
+\end_inset
+
+( וכך ניתן לקבל 
+\begin_inset Formula 
+\[
+\phi\sim\left(A+B^{\dagger}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך שההמילטוניאן הסופי הוא 
+\begin_inset Formula 
+\[
+H=\int\frac{d^{3}p}{\left(2\pi\right)^{3}}\left[A_{p}^{\dagger}A_{p}+B_{p}^{\dagger}B_{p}+\text{zero point energy}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר, בשדה סקלארי מרוכב יש שני סוגי חלקיקים 
+\begin_inset Formula $A$
+\end_inset
+
+ ו 
+\begin_inset Formula $B$
+\end_inset
+
+ )וקוואנטות(.
+ זהו עדיין סכום אינסופי של אוסילטורים הרמוניים אבל עבור שני סוגים של קוונטות.
+\end_layout
+
+\begin_layout Standard
+כך ש 
+\begin_inset Formula $\phi$
+\end_inset
+
+ הורס את הקוונטה 
+\begin_inset Formula $A$
+\end_inset
+
+ ויוצר את הקוונטה 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מצב הואקום בשדה זה הוא 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+ מושמד גם לכל 
+\begin_inset Formula $A$
+\end_inset
+
+ וגם לכל 
+\begin_inset Formula $B$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $A\left|0\right\rangle =0$
+\end_inset
+
+ ו 
+\begin_inset Formula $B\left|0\right\rangle =0$
+\end_inset
+
+ ולואקום אין קוונטה.
+ 
+\end_layout
+
+\begin_layout Standard
+את שאר הספקטרום ניתן ליצור על ידי הפעלת כל סוגי ה 
+\begin_inset Formula $A^{\dagger}$
+\end_inset
+
+ וכל סוגי ה 
+\begin_inset Formula $B^{\dagger}$
+\end_inset
+
+ על הואקום.
+\end_layout
+
+\begin_layout Standard
+במצב של חלקיק יחיד יש ניוון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי 
+\begin_inset Formula $B_{p}^{\dagger}\left|0\right\rangle $
+\end_inset
+
+ ו 
+\begin_inset Formula $A_{p}^{\dagger}\left|0\right\rangle $
+\end_inset
+
+ בעלי אותה אנרגיה.
+\end_layout
+
+\begin_layout Subsection
+סטטיסטיקות של החלקיקים
+\end_layout
+
+\begin_layout Standard
+נחזור לרגע לשדה סקלארי ממשי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{p}^{\dagger}a_{q}^{\dagger}\left|0\right\rangle =a_{q}^{\dagger}a_{p}^{\dagger}\left|0\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שני המצבים בלתי ניתנים להבחנה מכיוון שהאופרטורים מתחלפים.
+ ולכן נסיק שהחלקיקים הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל זהים.
+ 
+\end_layout
+
+\begin_layout Standard
+כמו כן אין הגבלה על כמה חלקיקים ניתן ליצור עם אותה האנרגיה.
+ ניתן להפעיל את אותו אופרטור 
+\begin_inset Formula $a_{p}^{\dagger}$
+\end_inset
+
+ עם אותה האנרגיה והתנע )ליצור את אותו החלקיק( כמה פעמים שנרצה.
+ מה שאומר ששדה קליין גורדון פועל תחת סטטיסטיקת בוזה איינשטיין.
+ זה נכון גם עבור שדה מרוכב.
+\end_layout
+
+\begin_layout Standard
+כלומר החלקיקים בו בוזונים.
+\end_layout
+
+\begin_layout Standard
+הספין של חלקיק קשור לקיטוב של השדה הקלאסי.
+ כך שכל שדה סקלארי )ממשי או מרוכב( , עם ספין 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ושדה וקטורי עם ספין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ 
+\end_layout
+
+\begin_layout Standard
+כמו כן, ניתן לבנות אוסילטור הרמוני פשוט שיהיה פרמיוני )נעשה את זה בשיעורי
+ הבית(.
+\end_layout
+
+\begin_layout Standard
+בשדה בוזוני השתמשנו ב 
+\begin_inset Formula $\left[a,a^{\dagger}\right]=1$
+\end_inset
+
+, לעומת זאת בשדה פרמיוני עוברים לאנטי יחסי חילוף כלומר 
+\begin_inset Formula 
+\[
+\left\{ b,b^{\dagger}\right\} =bb^{\dagger}+b^{\dagger}b=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכן 
+\begin_inset Formula 
+\[
+\left\{ b,b\right\} \overset{b^{2}=0}{\overbrace{=}}\left\{ b^{\dagger},b^{\dagger}\right\} =0
+\]
+
+\end_inset
+
+ וכאן אין אנלוג מהמכניקה הקלאסית.
+\end_layout
+
+\begin_layout Standard
+עם הקווינטוט הזה יוצרים שדות פרמיונים.
+ הם יכולים ליצור חלקיק יחיד לכל מצב ספיציפי.
+\end_layout
+
+\begin_layout Subsection
+סימטריות
+\end_layout
+
+\begin_layout Standard
+נחזור כעת לשדה המרוכב הסקלארי.
+ ראינו שיש ניוון מלא של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכל חלקיק.
+\end_layout
+
+\begin_layout Standard
+באופן כללי לכל ערך של אנרגיה ותנע יש מרחב בגודל 
+\begin_inset Formula $2d$
+\end_inset
+
+ של מצבים אפשריים.
+ וזה נובע מההשלכות של הסימטרייה.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula 
+\[
+\phi=\phi_{1}+i\phi_{2}=\left(\begin{array}{c}
+\phi_{1}\\
+\phi_{2}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $\phi_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\phi_{2}$
+\end_inset
+
+ ממששיים.
+\end_layout
+
+\begin_layout Standard
+וניתן לסובב מצב זה עם מטריצה אורתוגונלית 
+\begin_inset Formula $O$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\phi\rightarrow O_{ij}\phi_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מנקודת המבט של 
+\begin_inset Formula $\phi$
+\end_inset
+
+ כשדה מרוכב, יש סימטריה 
+\begin_inset Formula $UN$
+\end_inset
+
+ )שעוד נדבר עליה( שמאפשרת לסובב את 
+\begin_inset Formula $\phi$
+\end_inset
+
+ בכל פאזה כלומר: 
+\begin_inset Formula 
+\[
+\phi\rightarrow e^{i\alpha}\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימטריות שקשורות לטרנספורמציות במרחב של השדה, שלא תלויות בקואו' 
+\begin_inset Formula $x,t$
+\end_inset
+
+, נקראות סימטריות גלובאליות.
+ 
+\end_layout
+
+\begin_layout Standard
+נניח ההמילטוניאן ששווה לסכום של שדות:
+\begin_inset Formula 
+\[
+H=\sum_{n=1}^{N}\int d\vec{r}\left[\pi_{n}^{\dagger}\pi_{n}+\left(\nabla\phi_{n}\right)^{\dagger}\left(\nabla\phi_{n}\right)+m^{2}\phi_{n}^{\dagger}\phi\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכתוב את 
+\begin_inset Formula $\vec{\phi}$
+\end_inset
+
+ כוקטור של שדות כלומר 
+\begin_inset Formula 
+\[
+\vec{\phi}=\left(\begin{array}{c}
+\phi_{1}\\
+\phi_{2}\\
+\vdots\\
+\phi_{N}
+\end{array}\right)\;\Longrightarrow\vec{\pi}=\left(\begin{array}{c}
+\pi_{1}\\
+\pi_{2}\\
+\vdots\\
+\pi_{N}
+\end{array}\right)
+\]
+
+\end_inset
+
+נסתכל על הטרנספורמצייה הבאה: 
+\begin_inset Formula 
+\[
+\vec{\phi}\rightarrow T\vec{\phi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\vec{\pi}\rightarrow T\vec{\pi}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $T$
+\end_inset
+
+ מטריצה 
+\begin_inset Formula $N\times N$
+\end_inset
+
+ לא שתלויה בקואורדינטות.
+\end_layout
+
+\begin_layout Standard
+אז ההמילטוניאן תחת הטרנספורמציה יהיה 
+\begin_inset Formula 
+\[
+H\rightarrow\sum_{n=1}^{N}\int d\vec{r}\left[\pi_{n}^{\dagger}T^{\dagger}T\pi_{n}+\left(\nabla\phi_{n}\right)^{\dagger}T^{\dagger}T\left(\nabla\phi_{n}\right)+m^{2}\phi_{n}^{\dagger}T^{\dagger}T\phi\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $T$
+\end_inset
+
+ היא מטריצה יונטרית אז 
+\begin_inset Formula $T^{\dagger}T=\mathbbm{1}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $H$
+\end_inset
+
+ עובר לעצמו תחת הטרנספורמציה וזאת תהיה סימטרייה.
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $H$
+\end_inset
+
+ נשמר תחת טרנספורמציות לינאריות.
+ וחבורת הסימטריה המתאימה נקראת 
+\begin_inset Formula $U\left(N\right)$
+\end_inset
+
+ )מטריצות יוניטריות 
+\begin_inset Formula $N\times N$
+\end_inset
+
+(.
+ אנחנו אומרים ש 
+\begin_inset Formula $\phi$
+\end_inset
+
+ עובר טרנספורמציה כמו וקטור בהצגה הפנדמנטלית של 
+\begin_inset Formula $U\left(N\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+נסתכל במרחק כל המטריצות היוניטריות בגודל 
+\begin_inset Formula $N\times N$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula 
+\[
+T\in U\left(N\right)\rightarrow\left|T\right|^{2}=1\;\left|T\right|=\pm1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן נוכל לכתוב 
+\begin_inset Formula 
+\[
+T=e^{iM}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|T\right|^{2}=1\;\Longrightarrow\;e^{i\left(M-M^{\dagger}\right)}=1\;\Longrightarrow M=M^{\dagger}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לחשב שקיימים 
+\begin_inset Formula $N^{2}$
+\end_inset
+
+ איברים שפורשים את המרחב הנל לפי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2N^{2}-..
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $T\in SU\left(N\right)$
+\end_inset
+
+ ניתן לכתוב אותה כ 
+\begin_inset Formula 
+\[
+T=e^{iM}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובגלל שהדטרמיננטה שווה ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אזי 
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן דומה עבור שדה סקלארי ממשי
+\end_layout
+
+\begin_layout Standard
+נמצא חבורת 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ ואם הדטרמיננטות הן 
+\begin_inset Formula $1$
+\end_inset
+
+ נקרא לה חבורת 
+\begin_inset Formula $SO\left(N\right)$
+\end_inset
+
+.
+ באופן דומה חבורה זו נפרשת על ידי 
+\begin_inset Formula $\frac{N\left(N-1\right)}{2}$
+\end_inset
+
+ .
+ ואלה אנטי סימטריות.
+\end_layout
+
+\begin_layout Standard
+כמו כן יש חבורת סימטריה 
+\begin_inset Formula $U\left(1\right)$
+\end_inset
+
+ שהיא הוספת פאזה:
+\begin_inset Formula 
+\[
+\phi\rightarrow e^{i\theta}\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+לסיכום:
+\end_layout
+
+\begin_layout Standard
+סכום אינסופי של אוסילטורים הרמוניים נותן לנו לגרנז'יאן חופשי, שדה חופשי,
+ חלקיק חופשי.
+\end_layout
+
+\begin_layout Standard
+ניתן להוסיף ללגרנז'יאן החופשי דברים נוספים אך עליהם להיות שמורים תחת הסימטריות
+ של המערכת.
+\end_layout
+
+\begin_layout Standard
+ראינו שכשמוסיפים איברים בצורה של 
+\begin_inset Formula $\phi^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\ge3$
+\end_inset
+
+ מקבלים במשוואות התנועה איברים לא לינאריים.
+ ואנחנו לא יודעים איך לפתור זאת מפורשות, לשם כך אנחנו ניעזרים בתורת ההפרעות.
+\end_layout
+
+\begin_layout Section
+תורת ההפרעות
+\end_layout
+
+\begin_layout Standard
+נתחיל עם אוסילטור הרמוני ולאחר מכן נעבור לשדות.
+\end_layout
+
+\begin_layout Subsection
+הפרעות באוסילטור הרמוני
+\end_layout
+
+\begin_layout Standard
+נניח שקיים לנו המילטוניאן 
+\begin_inset Formula 
+\[
+H=H_{0}+H_{1}\quad H_{1}\ll H_{0}
+\]
+
+\end_inset
+
+ לעיתים חושבים על תורת ההפרעות כדרך לפתור בעיה שאנחנו לא יודעים לפתור, פותרים
+ את הביעה הלא מופרעת ואז מוסיפים הפרעה שמקרבת את הפתרון.
+ אבל למעשה תורת ההפרעות היא יותר מזה, היא הדרך שלנו להבין את הטבע.
+\end_layout
+
+\begin_layout Standard
+נתחיל מסדר ראשון: 
+\end_layout
+
+\begin_layout Standard
+אכפת לנו רק ממצבים בעלי אנרגיה זהה.
+ כלומר 
+\begin_inset Formula 
+\[
+\left\langle f\right|H\left|i\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כשאפכת לנו רק מ 
+\begin_inset Formula 
+\[
+E_{f}=E_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Amp\left(\left|i\right\rangle \rightarrow\left|f\right\rangle \right)=\sum_{n}\frac{\left\langle f\right|H\left|i\right\rangle \left\langle n\right|H\left|i\right\rangle }{E_{f}-E_{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן בפוטנציאל 
+\begin_inset Formula 
+\[
+V\left(x,y\right)=\frac{x^{2}}{2}+\frac{4y^{2}}{2}+\alpha x^{2}y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האיבר הלא הרמוני מעביר אנרגיה בין מצבים שונים.
+\end_layout
+
+\begin_layout Standard
+ו 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ שולט בכמות האנרגיה שעוברת בין המצבים.
+\end_layout
+
+\begin_layout Standard
+נזכיר את עקרון פרמי גולדן: סיכוי המעבר בין מצבים נסמנו ב 
+\begin_inset Formula $W_{i\rightarrow f}$
+\end_inset
+
+ פרופורצינאלי 
+\begin_inset Formula 
+\[
+W_{i\rightarrow f}\propto\underset{anplitude\;for\;the\;\left\langle f\right|H\left|i\right\rangle }{\underbrace{\left|A\right|^{2}}}\times\text{pahse space}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $\left\langle f\right|H\left|i\right\rangle $
+\end_inset
+
+ מכיל את כל הדינמיקות ואותן נפתור עם תורת ההפרעות או דיאגרמות פיינמן.
+\end_layout
+
+\begin_layout Standard
+לעומת זאת האיבר של מרחב הפאזה מכיל את הגדלים הקינמטיים לדוג' המסה או התנע.
+ מציג את העובדה שהתהליך ככל הנראה יתרחש כשיש חלל גדול יותר להעביר למצב הסופי.
+\end_layout
+
+\begin_layout Standard
+נתבונן שוב בפוטנציאל שלנו, ונזכיר כי 
+\begin_inset Formula $x\sim a_{x}+a_{x}^{\dagger}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $y\sim a_{y}+a_{y}^{\dagger}$
+\end_inset
+
+ ונשאל מתי 
+\begin_inset Formula 
+\[
+A\sim\left\langle f\right|\alpha x^{2}y\left|i\right\rangle =0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון ש 
+\begin_inset Formula $H_{1}\sim x^{2}y$
+\end_inset
+
+ המעברים היחידים שיתאפשרו הם 
+\begin_inset Formula 
+\[
+\triangle n_{y}=\pm1\qquad\triangle n_{x}=\pm2,0
+\]
+
+\end_inset
+
+ לפי ההפרעה אנחנו יכולים לדעת אילו מעברים יתאפשרו ואילו לא.
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula 
+\[
+\left|i\right\rangle =\left|0,1\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון ש 
+\begin_inset Formula $\omega_{y}=2\omega_{x}$
+\end_inset
+
+ רק מצבים 
+\begin_inset Formula $\left|f\right\rangle =\left|2,0\right\rangle $
+\end_inset
+
+ יתאפשרו.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\sim\left\langle 2,0\right|\alpha x^{2}y\left|0,1\right\rangle \sim\alpha\left\langle 2,0\right|\left(a_{x}+a_{x}^{\dagger}\right)\left(a_{x}+a_{x}^{\dagger}\right)\left(a_{y}+a_{y}^{\dagger}\right)\left|0,1\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכל לצייר את דיאגרמת פיינמן בה חלקיק 
+\begin_inset Formula $y$
+\end_inset
+
+ אחד הופך לשני חלקיקי 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+y-<_{x}^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראינו שהסיכוי למעבר הוא 
+\begin_inset Formula 
+\[
+\Gamma\sim\left|A\right|^{2}\times P.S\sim\alpha^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן זמן החיים 
+\begin_inset Formula 
+\[
+\tau\sim\frac{1}{\Gamma}\sim\frac{1}{\alpha^{2}}
+\]
+
+\end_inset
+
+ כעת, נניח מערכת של שלושה אוסילטורים הרמונים )
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ד
+\begin_inset Quotes erd
+\end_inset
+
+ח(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H=\frac{p_{x}^{2}}{2m}+\frac{\omega_{x}^{2}x^{2}}{2}+\frac{p_{y}^{2}}{2m}+\frac{\omega_{y}^{2}y^{2}}{2}+\frac{p_{z}^{2}}{2m}+\frac{\omega_{z}^{2}z^{2}}{2}+\lambda_{1}xyz+\lambda_{2}x^{2}z
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח גם ש 
+\begin_inset Formula $\omega_{y}=3\omega_{x}$
+\end_inset
+
+ וכן נניח ש 
+\begin_inset Formula $\omega_{z}\gg\omega_{y}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\lambda_{1},\lambda_{2}\ll1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+ומצב יהיה לפי 
+\begin_inset Formula $\left|n_{x},n_{y},n_{z}\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נחפש את הסיכו לעבור מ 
+\begin_inset Formula $y\rightarrow3x$
+\end_inset
+
+ כלומר 
+\begin_inset Formula 
+\[
+A\left(\left|0,1,0\right\rangle \rightarrow\left|3,0,0\right\rangle \right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתחיל עם תורת ההפרעות עד לסדר שני:
+\end_layout
+
+\begin_layout Standard
+אפשר להגיע בשתי דרכים שקולות 
+\begin_inset Formula 
+\[
+\left|0,1,0\right\rangle \overset{\lambda_{1}}{\overbrace{\rightarrow}}\left|1,0,1\right\rangle \overset{\lambda_{2}}{\overbrace{\rightarrow}}\left|3,0,0\right\rangle 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|0,1,0\right\rangle \overset{\lambda_{2}}{\overbrace{\rightarrow}}\left|2,1,1\right\rangle \overset{\lambda_{1}}{\overbrace{\rightarrow}}\left|3,0,0\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר ישנם שני מצבי ביניים כדי להגיע למצב הסופי 
+\begin_inset Formula $\left|3,0,0\right\rangle $
+\end_inset
+
+ נחשב את אמפליטודת המעבר:
+\begin_inset Formula 
+\[
+A=\lambda_{1}\lambda_{2}\left[\frac{\left\langle 3,0,0\right|x^{2}z\left|1,0,1\right\rangle \left\langle 1,0,1\right|xyz\left|0,1,0\right\rangle }{\underset{3\omega_{x}}{\underbrace{\omega_{y}}}-\left(\omega_{x}+\omega_{z}\right)}+\frac{\left\langle 3,0,0\right|xzy\left|2,1,1\right\rangle \left\langle 2,1,1\right|x^{2}z\left|0,1,0\right\rangle }{\underset{3\omega_{x}}{\underbrace{\omega_{y}}}-\left(2\omega_{x}+\omega_{y}+\omega_{z}\right)}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזכיר ש 
+\begin_inset Formula 
+\[
+\hat{q}=\sqrt{\frac{1}{2\omega}}\left(a+a^{\dagger}\right)\quad a^{\dagger}\left|n\right\rangle =\sqrt{n+1}\left|n+1\right\rangle \quad a\left|n\right\rangle =\sqrt{n}\left|n-1\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת 
+\begin_inset Formula 
+\[
+\left\langle 1,0,1\right|xyz\left|0,1,0\right\rangle =\sqrt{\frac{1}{2^{3}\omega_{x}\omega_{y}\omega_{z}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולאחר חישובים אחרוכים מקבלים 
+\begin_inset Formula 
+\[
+A=-\frac{\lambda_{1}\lambda_{2}\sqrt{2}}{4\omega_{x}^{2}}\frac{1}{\omega_{z}^{2}-4\omega_{x}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נלמד דרך מגניבה איך לחשב זאת בדרך אחרת:
+\begin_inset Formula 
+\[
+y-\lambda_{1}<_{z-\lambda_{2}<_{x}^{x}}^{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל מה ששבחוץ של הדיאגרמה נקרא מצבים שבחוץ, 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ נקראים קודקודים.
+ ו 
+\begin_inset Formula $z$
+\end_inset
+
+ נקרא קו קידום פנימי.
+\end_layout
+
+\begin_layout Standard
+עבור הפרעה כלשהי, ראשית מציירים את הדיאגרמה, ואז מחשבים את האמפליטודה בדרך
+ הבאה- נקראים חוקי פיינמן-
+\end_layout
+
+\begin_layout Standard
+האמפליטודה היא המכפלה של הגורמים הבאים:
+\end_layout
+
+\begin_layout Standard
+לכל קוקוד מכפילים את האמפליטודה באיברי הצימוד )בדוגמא שלנו 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+( כעת לכל קו קידום מחסרים 
+\begin_inset Formula $-\frac{1}{E^{2}-q^{2}}$
+\end_inset
+
+ כש 
+\begin_inset Formula $E$
+\end_inset
+
+ האנרגיה של ההתחלה ו 
+\begin_inset Formula $q$
+\end_inset
+
+ האנרגיה שיוצאת ממנו.
+\end_layout
+
+\begin_layout Standard
+שימוש בנורמליזציה נכונה, לכל מצב חיצוני התחלתי נשתמש ב 
+\begin_inset Formula $\frac{1}{\sqrt{2\omega_{i}}}$
+\end_inset
+
+ ולכל מצב סופי שמופיע 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים נכפיל את המצב ב 
+\begin_inset Formula $\sqrt{n!}$
+\end_inset
+
+ נקרא פקטור סימטרייה.
+\end_layout
+
+\begin_layout Standard
+כעת נראה כיצד מעבירים את תורת ההפרעות לשדות
+\end_layout
+
+\begin_layout Subsection
+הפרעות בשדות
+\end_layout
+
+\begin_layout Standard
+באוסילטור הרמוני ראינו ש 
+\begin_inset Formula $x_{i}\sim a_{i}+a_{i}^{\dagger}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+ועבור שדות ראינו ש 
+\begin_inset Formula 
+\[
+\phi\sim\int d^{3}k\left(a_{k}e^{...}+a_{k}^{\dagger}e^{...}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה שדיאגרמת פיינמן היא דרך גרפית לחשב תורת הפרעות עם שדות.
+\end_layout
+
+\begin_layout Standard
+בשונה מאוסילטור הרמוני חלקיקים יכולים לקבל כל אנרגיה כל עוד מתקיים 
+\begin_inset Formula 
+\[
+E\ge m\quad\left(E^{2}=m^{2}+p^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אמפליטודה תחושב מהלגרנז'יאן ונעשה זאת על ידי יצירת גרפים שבהם קווים הם חלקיקים
+ וקודקודים הם האינטראקציות.
+\end_layout
+
+\begin_layout Standard
+דוגמאות לאינטראקציות.
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula 
+\[
+\mathscr{L}=\lambda\phi_{1}^{3}\qquad\phi_{1}-\lambda<_{\phi_{1}}^{\phi_{1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathscr{L}=\lambda\phi_{1}^{2}\phi_{2}\quad\phi_{1}-\lambda
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דיאגרמות פיינמן.
+ 
+\end_layout
+
+\begin_layout Standard
+אנחנו מציירים גרפים של דיאגרמות כשהקווים של הדיאגרמות הם חלקיקים, והקודקודים
+ הם האינטראקציות.
+ בשיעור קודם ראינו דוגמאות כיצד מייצרים דיאגרמות שונות.
+\end_layout
+
+\begin_layout Standard
+לרב אכפת לנו מתהליכים 
+\begin_inset Formula $\overset{decay}{\overbrace{1\rightarrow n}}$
+\end_inset
+
+ או 
+\begin_inset Formula $\overset{scattering}{\overbrace{2\rightarrow n}}$
+\end_inset
+
+ וצריך לוודא שיש לנו שימור אנרגיה ותנע )לעיתים נקרא שימור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תנע בכתיב יחסותי(.
+\end_layout
+
+\begin_layout Standard
+חלקיקים חיצוניים ו)פנימיים( נקראים 
+\begin_inset Formula $onshell$
+\end_inset
+
+ 
+\begin_inset Formula $\left(off-shall\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+חלקיקים פנימיים אמיתיים כלומר מקיימים 
+\begin_inset Formula 
+\[
+E^{2}=\vec{p}^{2}+m^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לעומת זאת החלקיקים החיצוניים לא חייבים לקיים את הקשר הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+ לעיתים נקראים חלקיקים וירטואלים.
+ כי הם לא חלקיקים שקיימים בתוצר הסופי.
+\end_layout
+
+\begin_layout Standard
+האמפליטודה היא מכפלה של כל הקודקודים והחלקיקים הפנימיים ופקטורים.
+\end_layout
+
+\begin_layout Standard
+עבור תהליך נתון נשתמש בקודקודים של התיאוריה )האינטראקציות( כדי לצייר את
+ הדיאגרמה.
+ נחבר בין קודקודים על ידי חיבור בין רגליים שונות כדי ליצור את הגרף.
+\end_layout
+
+\begin_layout Standard
+כמה דוגמאות:
+\begin_inset Formula 
+\[
+\mathscr{L}\supset\lambda\phi_{1}\phi_{2}\phi_{3}\quad\Gamma\left(\phi_{1}\rightarrow\phi_{2}\phi_{3}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\phi_{1}-\lambda<_{\phi_{3}}^{\phi_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך ש 
+\begin_inset Formula $A\sim\lambda$
+\end_inset
+
+ ו 
+\begin_inset Formula $\Gamma\sim\lambda^{2}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula 
+\[
+\tau\sim\frac{1}{\Gamma}\sim\frac{1}{\lambda^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+על מנת שהדעיכה תהיה מותרת עלינו לדרוש ש 
+\begin_inset Formula $m_{\phi_{1}}>m_{\phi_{2}}+m_{\phi_{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נדון בתהליך של פיזור 
+\begin_inset Formula 
+\[
+\mathscr{L}\supset\lambda\phi^{4},\quad\sigma\left(\phi\phi\rightarrow\phi\phi\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך ש 
+\begin_inset Formula 
+\[
+\underset{O\left(\lambda\right)}{\underbrace{_{\phi}^{\phi}X_{\phi}^{\phi}}}\underset{O\left(\lambda^{2}\right)}{\underbrace{+_{p_{2}}^{p_{1}}><><_{p_{4}}^{p_{3}}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיאגרמה הימנית הנקראת לופ יש חלקיקים פנימיים שהם חלקיקים וירטואלים.
+ כלומר לא חייבים לקיים את הקשר של 
+\begin_inset Formula $E^{2}=\vec{p^{2}}+m^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+וכן הזמן כמוסכמה הולך בכיוון 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמא נוספת 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathscr{L}\supset\lambda\phi_{1}^{2}\phi_{2}^{2}\quad\sigma\left(\phi_{1}\phi_{2}\rightarrow\phi_{1}\phi_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זו תהיה דיאגרמה כמו מיקודם רק שכעת שני קווים רציפים ושני קווים מקווקווים.
+\end_layout
+
+\begin_layout Standard
+לעומת זאת 
+\begin_inset Formula $\sigma\left(\phi_{1}\phi_{1}\rightarrow\phi_{1}\phi_{1}\right)$
+\end_inset
+
+ מכיל בהכרח לופ ולכן הסדר הנמוך ביותר האפשרי עבורו 
+\begin_inset Formula $O\left(\lambda^{2}\right)$
+\end_inset
+
+ )חוץ מיחידה כמובן(.
+\end_layout
+
+\begin_layout Standard
+דוגמא נוספת 
+\begin_inset Formula 
+\[
+\mathscr{L}\supset\lambda_{1}\phi_{1}\phi_{2}\phi_{3}+\lambda_{2}\phi_{1}^{2}\phi_{3}\quad\Gamma\left(\phi_{2}\rightarrow\phi_{1}\phi_{1}\phi_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נקבל 
+\begin_inset Formula 
+\[
+\phi_{2}-\lambda_{1}<_{\phi_{3}-\lambda_{2}<_{\phi_{2}}^{\phi_{1}}}^{\phi_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש 
+\begin_inset Formula $\phi_{3}$
+\end_inset
+
+ הוא חלקיק וירטואלי והסיבה שהפקטור 
+\begin_inset Formula $\frac{1}{m_{3}^{2}-q^{2}}$
+\end_inset
+
+ לא מתפוצץ הוא שזהו חלקיק לא אמיתי ולכן לא מקיים את הקשר 
+\begin_inset Formula $m_{3}^{2}=q^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהליך זה דומה לדעיכה של 
+\begin_inset Formula $\mu$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+כעת נכתוב את כללי פיינמן לשדות:
+\end_layout
+
+\begin_layout Standard
+נכתוב את אמפליטודות באמצעות תנעים כש 
+\begin_inset Formula 
+\[
+\left|k\right\rangle =\sqrt{2\omega_{k}}a_{k}^{\dagger}\left|0\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך ש 
+\begin_inset Formula 
+\[
+\left|k\right\rangle \propto a_{k}^{\dagger}\left|0\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דבר ראשון שנעשה זה לצייר את הדיאגרמה בהתאם לתהליך בו אנחנו נמצאים.
+ ניתן שמות של תנע לתנעים הנכנסים והיוצאים 
+\begin_inset Formula $\left(p_{1},p_{2},...\right)$
+\end_inset
+
+ וכמובן נסמן גם את הכיוונים שלהם, לרוב נהוג לסמן תנעים נכנסים בכיוון פנימה
+ ותנעים יוצרים בכיוון החוצה.
+\end_layout
+
+\begin_layout Standard
+כל קודקוד נכתוב כ 
+\begin_inset Formula $i\lambda$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+נדרוש שימור תנע בכל קודקוד.
+\end_layout
+
+\begin_layout Standard
+בנוסף כל קו מקדם )חלקיק וירטואלי- קו פנימי( ייתן פקטור של 
+\begin_inset Formula $\frac{i}{q^{2}-m^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כש 
+\begin_inset Formula $q$
+\end_inset
+
+ הוא ארבע תנע של הקו, ו 
+\begin_inset Formula $m$
+\end_inset
+
+ הוא מסת החלקיק.
+ ונשים לב שבחלקיק זה 
+\begin_inset Formula $q^{2}\neq m^{2}$
+\end_inset
+
+ בגלל שזהו חלקיק וירטואלי ולא נמצא ב 
+\begin_inset Formula $on-shell$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+כל קו חיצוני נותן פקטור של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\end_layout
+
+\begin_layout Standard
+עבור לולאות מטנגרלים על התנע.
+\end_layout
+
+\begin_layout Standard
+לבסוף לוקחים בחשבון פקטור של סימטריות לא נכתוב זאת בצורה מדויקת אבל אכפת
+ לנו מפקטורים יחסותיים זה לזה.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הערות:
+\end_layout
+
+\begin_layout Standard
+אם יש דיאגרמות שמחליפות תנע חיצוני הן לא אותו דבר.
+\end_layout
+
+\begin_layout Standard
+אנחנו נשמור פקטורים של 
+\begin_inset Formula $\left(2\pi\right)^{4}\delta\left(p_{i}-p_{f}\right)$
+\end_inset
+
+ בפקטורים של הדעיכה.
+\end_layout
+
+\begin_layout Standard
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathscr{L}_{int}=\lambda\phi^{4}\quad\phi\phi\rightarrow\phi\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+_{p_{2}}^{p_{1}}X_{p_{4}}^{p_{3}}+_{p_{2}}^{p_{1}}>i\lambda Oi\lambda<_{p_{4}}^{p_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דיאגרמה נוספת אפשרית 
+\begin_inset Formula 
+\[
+\overset{}{}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ממשיכים בתורת הפרעות לשדות ובפרט - חוקי פיינמן.
+\end_layout
+
+\begin_layout Standard
+נמשיך בדוגמאות נוספות:
+\end_layout
+
+\begin_layout Standard
+עבור הלגרנז'יאן 
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמשיך עם חוקי הזהב של פרמי - מרחב הפאזה.
+\end_layout
+
+\begin_layout Standard
+פסקין פרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, גריפית'ס פרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+דיברנו על דעיכות: בסוף הפעם הקודמת, מהו קצב דעיכה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Gamma=\frac{1}{2m_{i}}\int\left|M\right|^{2}\left(2\pi\right)^{4}\underset{3}{\underbrace{\delta^{4}\left(p_{i}-\sum_{i=2}^{n}p_{i}\right)}}\cdot\underset{1}{\underbrace{\prod^{n}2\pi\delta\left(p_{j}^{2}-m_{j}^{2}\right)}}\underset{2}{\underbrace{\Theta\left(p_{j}^{0}\right)}}\int\frac{d^{4}p_{j}}{\left(2\pi\right)^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האיברים של מרחב הפאזה קושרים את התנע על ידי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קשרים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1$
+\end_inset
+
+.
+ לכל חלקיק יוצא נמצא על המסה של השל 
+\begin_inset Formula $p_{j}^{2}=m_{j}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2$
+\end_inset
+
+.
+ כל חלקיק יוצא בעל אנרגיה חיובית 
+\begin_inset Formula $p_{j}^{0}=E_{j}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $3$
+\end_inset
+
+.
+ האנרגיה והמומנטום )
+\numeric on
+4
+\numeric off
+ מומנטום( צריך להיות שמור.
+ 
+\end_layout
+
+\begin_layout Standard
+נשתמש בכך כדי לקבל צורה יותר סטנדרטית.
+ נתבונן באינטגרל 
+\begin_inset Formula 
+\[
+\int dp_{0}:\qquad\delta\left(p^{2}-m^{2}\right)=\delta\left(p_{0}^{2}-\vec{p}^{2}-m^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בזהות
+\begin_inset Formula 
+\[
+\delta\left(x^{2}-a^{2}\right)=\frac{1}{2a}\left[\delta\left(x-a\right)+\delta\left(x+a\right)\right]\qquad a>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula 
+\[
+\Theta\left(p^{0}\right)\delta\left(p^{2}-m^{2}\right)=\frac{1}{2E}\delta\left(p^{0}-E\right)\quad E=\sqrt{\vec{p}^{2}+m^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן נקבל ש
+\begin_inset Formula 
+\[
+\Gamma=\frac{1}{2m_{i}}\int\left|M\right|^{2}\left(2\pi\right)^{4}\underset{3}{\underbrace{\delta^{4}\left(p_{i}-\sum_{i=2}^{n}p_{i}\right)}}\cdot\underset{1}{\underbrace{\prod^{n}2\pi\delta\left(p_{j}^{2}-m_{j}^{2}\right)}}\underset{2}{\underbrace{\Theta\left(p_{j}^{0}\right)}}\int\frac{d^{4}p_{j}}{\left(2\pi\right)^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמא התפצלות לשני גופים:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula 
+\[
+1-<_{3}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{1}=\left(m_{1},0,0,0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{2}=\frac{m_{1}^{2}+m_{2}^{2}-m_{3}^{2}}{2m_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כשמתקיים 
+\begin_inset Formula 
+\[
+\left|\vec{p}_{2}\right|=\left|\vec{p_{3}}\right|=\sqrt{\frac{\left[\left(m_{1}^{2}-\left(m_{2}+m_{3}\right)^{2}\right)\left(m_{1}^{2}-\left(m_{2}-m_{3}\right)^{2})\right)\right]}{2m_{1}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+החלקיקים חייבים לנוע בכיוונים מנוגדים, כאשר הכיוון בו הם נעים לא נקבע באופן
+ כללי )ולכן סוכמים על כל הכיוונים(.
+\end_layout
+
+\begin_layout Standard
+נעבור כעת לפיזורים: 
+\begin_inset Formula $1,2\rightarrow3,4,...,n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=\frac{1}{2E_{1}2E_{2}\left|\vec{v}_{1}-\vec{v}_{2}\right|}\int\left|M\right|^{2}\left(2\pi\right)^{4}\delta^{4}\left(p_{1}+p_{2}-\sum_{j=3}^{n}p_{j}\right)\cdot\prod_{j=3}^{n}2\pi\delta\left(p_{j}^{2}-m_{j}^{2}\right)\Theta\left(p_{j}^{0}\right)\frac{d^{4}p_{j}}{\left(2\pi\right)^{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ושוב באמצעות אותו פיתוח נקבל 
+\begin_inset Formula 
+\[
+\sigma=\frac{1}{2E_{1}2E_{2}\left|\vec{v}_{1}-\vec{v}_{2}\right|}\int\left|M\right|^{2}\left(2\pi\right)^{4}\delta^{4}\left(p_{1}+p_{2}-\sum_{j=3}^{n}p_{j}\right)\cdot\prod_{j=3}^{n}\frac{1}{2E_{j}}\frac{d^{3}p_{j}}{\left(2\pi\right)^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן באיבר הנרמול 
+\begin_inset Formula $\frac{1}{2E_{1}2E_{2}\left|\vec{v}_{1}-\vec{v}_{2}\right|}$
+\end_inset
+
+ ניתן לכתיבה גם כ 
+\begin_inset Formula 
+\[
+\frac{1}{4\sqrt{\left(p_{1}\cdot p_{2}\right)^{2}-m_{1}^{2}m_{2}^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהו לורנץ אינווריאנט.
+ הפקטור 
+\begin_inset Formula $\frac{1}{2E_{1}}\frac{1}{2E_{2}}$
+\end_inset
+
+ נובע מהנרמול של החלקיקים הנכנסים.
+\end_layout
+
+\begin_layout Standard
+כך ש 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\frac{total\;probability}{incoming\;flux}$
+\end_inset
+
+ .
+ במערכת מרכזה מסה
+\end_layout
+
+\begin_layout Standard
+דוגמא: פיזור 
+\begin_inset Formula $2\rightarrow2$
+\end_inset
+
+ :
+\begin_inset Formula 
+\[
+\left(\frac{\partial\sigma}{\partial\Omega}\right)_{CM}=\frac{1}{2E_{1}}\frac{1}{2E_{2}\left|v_{1}-v_{2}\right|}\frac{\left|p_{1}\right|}{\left(2\pi\right)^{4}4E_{CM}}\left|M\left(p_{1}p_{2}\rightarrow p_{3}p_{4}\right)\right|^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נחבר את כל הפיתוח כדי לחשב חישוב מלא כדוגמא:
+\end_layout
+
+\begin_layout Standard
+נחשב פיזור 
+\begin_inset Formula $2\rightarrow2$
+\end_inset
+
+.
+ נזכיר שיש לנו 
+\begin_inset Formula $s,t,u$
+\end_inset
+
+ משתני ...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathscr{L}=\lambda\phi^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן נקבל 
+\begin_inset Formula 
+\[
+M_{A}\propto\frac{\lambda^{2}}{\left(p_{1}+p_{2}\right)^{2}-m^{2}}\quad M_{B}\propto\frac{\lambda^{2}}{\left(p_{1}-p_{3}\right)^{2}-m^{2}}\quad M_{C}\propto\frac{\lambda^{2}}{\left(p_{1}-p_{2}\right)^{2}-m^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שלחלקיקים אותה המסה.
+ נסתכל במערכת מרכז המסה.
+ בהתחלה החלקיקים נעים זה לקראת זה )על ציר 
+\begin_inset Formula $z$
+\end_inset
+
+( ולאחר מכן מתפזרים בכיוון מנוגדים באיזושהי זווית 
+\begin_inset Formula $\theta$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{1}=\left(E,0,0,p_{a}\right)\Longrightarrow\;E^{2}-p_{a}^{2}=p_{1}^{2}=m^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{2}=\left(E,0,0,-p_{a}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{3}=\left(E,p_{a}\sin\left(\theta\right),0,p_{a}\cos\left(\theta\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{4}=\left(E,-p_{a}\sin\left(\theta\right),0,-p_{a}\cos\left(\theta\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן נוכל לכתוב את הקומבינציות של התנע הנחוצות לנו:
+\begin_inset Formula 
+\[
+p_{1}+p_{2}=\left(2E,0,0,0\right)\Longrightarrow\;\left(p_{1}+p_{2}\right)^{2}=s=4E^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{1}-p_{3}=\left(0,-p_{a}\sin\left(\theta\right),0,p_{a}\left(1-\cos\left(\theta\right)\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+t=\left(p_{1}-p_{3}\right)^{2}=-p_{a}^{2}\sin^{2}\left(\theta\right)-p_{a}^{2}\left(1-\cos\left(\theta\right)\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $s_{\theta}=\sin\left(\theta\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $c_{\theta}=\cos\left(\theta\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $=-p_{a}^{2}s_{\theta}^{2}-p_{a}^{2}\left(1+c_{\theta}^{2}-2c_{\theta}\right)=-2p_{a}^{2}\left(1-c_{\theta}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולבסוף 
+\begin_inset Formula 
+\[
+p_{1}-p_{4}=\left(0,p_{a}\sin\left(\theta\right),0,p_{a}\left(1+\cos\left(\theta\right)\right)\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Longrightarrow\;u=\left(p_{1}-p_{4}\right)^{2}=-p_{a}^{2}s_{\theta}^{2}-p_{a}^{2}\left(1+c_{\theta}^{2}+2c_{\theta}\right)=-2p_{a}^{2}\left(1+c_{\theta}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d\sigma}{d\cos\left(\theta\right)}\propto\lambda^{2}\left|\frac{i}{4E^{2}-m^{2}}+\frac{i}{-2\left(E^{2}-m^{2}\right)\left(1-c_{\theta}\right)-m^{2}}+\frac{i}{-2\left(E^{2}-m^{2}\right)\left(1+c_{\theta}\right)-m^{2}}\right|^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערת אגב: יש דרך לראות שלכל שלושת הדיאגרמות יש אותם פקטורי סימטריה.
+\end_layout
+
+\begin_layout Standard
+הערות: מימדים 
+\begin_inset Formula 
+\[
+\Gamma=\frac{1}{\tau}=\frac{1}{sec}=\left[m\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מימדים של אלמנט מטריצה לוי במספר החלקיקים.
+\end_layout
+
+\begin_layout Standard
+אם יש 
+\begin_inset Formula $n$
+\end_inset
+
+ קווים חיצוניים )נכנסים ויוצרים( אז מימדי המטריצה 
+\begin_inset Formula $4-n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הקרוס סקשיין הוא אינווריאנטי לורנץ.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+תקציר: 
+\series default
+דיברנו באופן כללי על חלקיקים חופשיים )כל איבר ריבועי בלגנז'יאן(, והם לא
+ יכולים להווצר או לדעוך.
+ כאשר מוסיפים תיאוריית הפרעות עם גודל קטן, הפרעות אלה יכולות לייצר ולהרוס
+ חלקיקים ולתת לנו את הדימיקות של התיאוריה.
+ דיאגרמות פיינמן הם כלי שניתן לחשב איתו את אמליטודות המעבר )אלמנטי מטריצה(.
+ נדרשים עוד פרטים רבים כדי לקבל את החישוב המדוייק.
+ ברגע שיש לנו חישוב מדויק ויש לנו ניסוי שבודק את המדידות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל ניתן לבחון את התיאוריה.
+\end_layout
+
+\begin_layout Section
+פרמיונים
+\end_layout
+
+\begin_layout Standard
+השדות שחשובים לנו:
+\end_layout
+
+\begin_layout Standard
+שדות עם ספין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)לורנץ סינגלט(, הם סקלארי ונהוג לסמנם ב 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ לדוגמא חליקיקי היגס.
+\end_layout
+
+\begin_layout Standard
+ספין 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ - פרמיונים, שדות יד ימין ויד שמאל, מסומנים ב 
+\begin_inset Formula $\psi$
+\end_inset
+
+ או 
+\begin_inset Formula $\psi_{L}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\psi_{R}$
+\end_inset
+
+ )יד ימין ויד שמאל(.
+ שדה של חומר כמו אלקטרונים.
+\end_layout
+
+\begin_layout Standard
+ספין 
+\begin_inset Formula $1$
+\end_inset
+
+ - שדה וקטורי, נקרא בוזוני כיול, לדוגמא נושאי הכח - פרמיונים.
+\end_layout
+
+\begin_layout Standard
+נדבר על פרמיונים - בנפנוף ידיים.
+ לפרטים נוספים פסקין פרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+הבא נתחיל:
+\end_layout
+
+\begin_layout Standard
+במקום להשתמש בלגרנז'יאן קליין גורדון והמשוואה היוצאת ממנו, נשתמש במשוואת
+ דיראק:
+\begin_inset Formula 
+\[
+\left(i\gamma^{\mu}\partial_{\mu}-m\right)\underset{dirac\;field/fermion}{\underbrace{\psi\left(x\right)}}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פרמיונים הם עירורים של אוסילטור הרמוני פרמיוני שבנוי על אנטי קומוטטור.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi\left(x\right)$
+\end_inset
+
+ שדה בעל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רכיבים )אך לא וקטור(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma^{\mu}$
+\end_inset
+
+ מטריצת דיראק.
+ כשדיברנו על פרמיונים בעל היה לנו פולי-מטריצות.
+ עבור כתיב יחסותי יש לנו את המקבילה 
+\begin_inset Formula $\gamma^{\mu}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+נתיחס ל 
+\begin_inset Formula $\mu=0,1,2,3$
+\end_inset
+
+ אז יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מטריצות, כל אחת מהן מטריצה 
+\begin_inset Formula $4\times4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נכתוב כשני בלוקים 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ כלומר 
+\begin_inset Formula 
+\[
+\gamma^{\mu}=\left(\begin{array}{cc}
+0 & \sigma^{\mu}\\
+\overline{\sigma}^{\mu} & 0
+\end{array}\right)\quad\sigma^{\mu}=\left(\mathbbm{1}_{2\times2},\vec{\sigma}\right)\quad\overline{\sigma}^{\mu}=\left(\mathbbm{1}_{2\times2},-\vec{\sigma}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אני מזמין את כל מי שמעוניין.ת להשלים חלקים חסרים בסיכום/ תיקונים 
+\end_layout
+
+\begin_layout Standard
+לשלוח לי את הקטעים הרלוונטיים ואעדכן את הסיכום :(.
+ 
+\end_layout
+
+\end_body
+\end_document
